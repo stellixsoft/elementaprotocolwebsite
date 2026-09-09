@@ -22,7 +22,7 @@ export function ContactEmailLink({
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "text-[#24bace] underline-offset-2 transition-colors hover:text-[#1ca6b8] hover:underline",
+        "text-[#24bace] underline underline-offset-4 transition-colors hover:text-[#1ca6b8]",
         className,
       )}
     >

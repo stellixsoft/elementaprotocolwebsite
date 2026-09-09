@@ -542,7 +542,7 @@
     color: var(--btn-primary-bg);
   }
   .prose-docs a {
-    @apply text-Elementa-accent underline-offset-2 transition-colors hover:text-Elementa-muted hover:underline;
+    @apply text-Elementa-accent underline underline-offset-4 transition-colors hover:text-Elementa-muted;
   }
   .prose-docs strong,
   .prose-docs b {

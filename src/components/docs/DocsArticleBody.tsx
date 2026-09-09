@@ -459,7 +459,7 @@ export function CurrentStatus() {
             <li>
               <strong>Elementa Wallet</strong> (operational), product detail and download context live on
               the{" "}
-              <Link href="/wallet" className="text-[#24bace] hover:underline">
+              <Link href="/wallet" className="text-[#24bace] underline underline-offset-4">
                 Wallet
               </Link>{" "}
               page.
