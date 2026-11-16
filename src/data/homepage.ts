@@ -42,14 +42,14 @@ export const navigation = {
 
 export const hero = {
   headlineParts: [
-    { text: 'One self-custodial wallet for ', highlight: false },
-    { text: 'Bitcoin, Solana & EVM', highlight: true },
-    { text: '', highlight: false },
+    { text: 'Self-custody with ', highlight: false },
+    { text: 'transfer protection', highlight: true },
+    { text: ' built in', highlight: false },
   ],
   subheadline:
-    'Elementa Wallet, from Elementa Protocol by Stellix Soft, is a self-custodial crypto wallet. Hold, send, receive and swap assets on Bitcoin, Solana, Ethereum, Polygon, BNB Chain and Avalanche. Your keys never leave your device.',
-  primaryCta: { label: 'Launch Wallet', href: '/wallet' },
-  secondaryCta: { label: 'Read Documentation', href: '/docs' },
+    'Elementa Wallet keeps your Bitcoin, Solana and EVM keys on your device and lets you decide what can leave it: freeze sending with a time lock, set a daily limit, and send only to addresses you trust.',
+  primaryCta: { label: 'Get Elementa Wallet', href: '/wallet' },
+  secondaryCta: { label: 'See how protection works', href: '#blockchain-section' },
 }
 
 export const statsHeading = ''
@@ -60,21 +60,21 @@ export const stats: Array<{ id: string; end: number; suffix: string; decimals: n
 export const blockchainCards = [
   {
     id: 'bc1',
-    title: 'Multi-chain in one wallet',
-    body: 'Manage Bitcoin, Solana and EVM assets (Ethereum, Polygon, BNB Chain, Avalanche) from a single recovery phrase.',
-    iconKey: 'what-is-blockchain',
+    title: 'Freeze sending, with a lock',
+    body: 'One switch blocks every outgoing send and swap. Lock it for 24 hours, 72 hours or 7 days so nobody can turn it off under pressure, not even you.',
+    iconKey: 'security',
   },
   {
     id: 'bc2',
-    title: 'Swaps with clear quotes',
-    body: 'Swap tokens through third-party routing (0x). You see the quote, network fee and minimum received before you confirm.',
+    title: 'Daily limit and whitelist',
+    body: 'Cap what can leave your wallet each day, and allow sends only to saved addresses and swaps only through contracts you trust.',
     iconKey: 'multichain',
   },
   {
     id: 'bc3',
-    title: 'Your keys, on your device',
-    body: 'Keys are generated and encrypted on your phone, protected by your password and Face ID. Optional encrypted backup with Sign in with Apple or Google.',
-    iconKey: 'security',
+    title: 'Lookalike-address warnings',
+    body: 'Scammers plant addresses that look like ones you have used. Elementa warns you before you send to a lookalike.',
+    iconKey: 'what-is-blockchain',
   },
 ]
 
@@ -132,7 +132,7 @@ export const seoSection = {
     {
       id: 'why-elementa',
       title: 'Why Elementa?',
-      body: 'Elementa brings Bitcoin, Solana and EVM networks into one wallet, built on Stellix Soft\'s own wallet engine. Optional Profile Sync backs up encrypted wallet settings with Sign in with Apple or Google, and lets you revoke access from lost devices.',
+      body: 'Most wallets let anything leave as soon as it is signed. Elementa adds Transfer Protection: a lockable freeze, a daily limit, a whitelist and lookalike-address warnings. It also brings Bitcoin, Solana and EVM networks into one wallet, built on Stellix Soft\'s own wallet engine. Optional Profile Sync backs up encrypted wallet settings with Sign in with Apple or Google, and lets you revoke access from lost devices.',
     },
   ],
 }
@@ -156,11 +156,17 @@ export const faq = {
   sectionLabel: 'FAQ',
   items: [
     {
+      id: 'faq0',
+      question: 'What is Transfer Protection?',
+      answer:
+        'Controls over what can leave your wallet: Freeze Sending (optionally locked for 24 hours, 72 hours or 7 days), a daily USD limit on sends and swaps, a whitelist of allowed addresses and contracts, and a warning when a recipient looks like an address from your history. They run on your device, so anyone who has your recovery phrase could still restore it in another app. Keep the phrase offline.',
+      defaultOpen: true,
+    },
+    {
       id: 'faq1',
       question: 'Is Elementa custodial?',
       answer:
         'No. Elementa is self-custodial. Your private keys and recovery phrase are created and stored encrypted on your device. Stellix Soft never has access to them and cannot move your funds.',
-      defaultOpen: true,
     },
     {
       id: 'faq2',
@@ -184,9 +190,9 @@ export const faq = {
 }
 
 export const community = {
-  headline: 'Join the Elementa community',
+  headline: 'Be first to try Elementa Wallet',
   subheadline:
-    'Follow product updates, ask questions and share feedback with the Elementa team.',
+    'Get launch updates, ask questions and share feedback with the Elementa team.',
   discord: {
     title: 'Discord',
     description: 'Chat with the team and other Elementa users.',
@@ -208,11 +214,11 @@ export const community = {
     href: 'https://t.me/Elementa',
   },
   newsletter: {
-    kicker: 'NEWSLETTER',
-    title: 'Elementa updates',
-    description: 'Occasional emails about new features and supported networks.',
+    kicker: 'LAUNCH UPDATES',
+    title: 'Get notified when Elementa Wallet launches',
+    description: 'One email when the app is live in your country, then occasional product updates. No spam.',
     placeholder: 'you@example.com',
-    cta: 'Subscribe',
+    cta: 'Notify me',
   },
 }
 export const ecosystem = {
@@ -220,7 +226,7 @@ export const ecosystem = {
   wallet: {
     title: 'Elementa Wallet',
     description:
-      'Hold, send, receive and swap assets across Bitcoin, Solana and EVM networks from one self-custodial app.',
+      'Self-custody for Bitcoin, Solana and EVM networks, with Transfer Protection: lockable freeze, daily limit, whitelist and lookalike warnings.',
     tags: ['Buy', 'Sell', 'Swap'],
   },
   chain: {
