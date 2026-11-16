@@ -170,6 +170,8 @@ export function ContactPage() {
                       <br />
                       {company.registeredAddress}
                       <br />
+                      <a href="tel:+18474969803" className="hover:underline">{company.phone}</a>
+                      <br />
                       {company.supportEmail}
                     </address>
                   </motion.div>
