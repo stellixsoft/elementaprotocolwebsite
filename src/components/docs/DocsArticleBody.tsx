@@ -9,7 +9,9 @@ export function Introduction() {
       body={
         <>
           <p>
-            Elementa Protocol is a product of Stellix Soft LLC. It is a unified digital infrastructure ecosystem designed to power the
+            Elementa Protocol is a Stellix Soft LLC project. Today it has one live product, Elementa
+            Wallet. Elementa Blockchain is in development and Elementa DEX is coming soon; neither is
+            available yet. Elementa Protocol is a unified digital infrastructure ecosystem designed to power the
             next generation of decentralized financial systems, blockchain applications, and exchange
             technologies. It is deliberately <strong>not</strong> marketed as a single app with a
             feature list: it is a <strong>layered architecture</strong> in which wallet, chain, and

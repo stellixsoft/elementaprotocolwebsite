@@ -4,7 +4,7 @@
  */
 export const site = {
   name: 'Elementa Protocol',
-  tagline: 'Elementa Protocol: a self-custodial wallet for Bitcoin, Solana and EVM networks, by Stellix Soft.',
+  tagline: 'Elementa Protocol by Stellix Soft: Elementa Wallet today, with Elementa Blockchain and Elementa DEX to come.',
 }
 
 
@@ -21,7 +21,7 @@ export const navigation = {
         {
           id: 'blockchains',
           label: 'Blockchains',
-          description: 'Explore supported networks and cross-chain bridges.',
+          description: 'Elementa Blockchain is in development.',
           href: '/blockchain',
         },
         {
@@ -47,7 +47,7 @@ export const hero = {
     { text: '', highlight: false },
   ],
   subheadline:
-    'Elementa Protocol is a self-custodial crypto wallet by Stellix Soft. Hold, send, receive and swap assets on Bitcoin, Solana, Ethereum, Polygon, BNB Chain and Avalanche. Your keys never leave your device.',
+    'Elementa Wallet, from Elementa Protocol by Stellix Soft, is a self-custodial crypto wallet. Hold, send, receive and swap assets on Bitcoin, Solana, Ethereum, Polygon, BNB Chain and Avalanche. Your keys never leave your device.',
   primaryCta: { label: 'Launch Wallet', href: '/wallet' },
   secondaryCta: { label: 'Read Documentation', href: '/docs' },
 }
@@ -224,10 +224,16 @@ export const ecosystem = {
     tags: ['Buy', 'Sell', 'Swap'],
   },
   chain: {
-    title: 'Elementa Chain',
+    title: 'Elementa Blockchain',
     description:
-      'A planned interoperability network. It is in research and not available yet.',
-    status: 'IN RESEARCH',
+      'The Elementa Protocol blockchain. It is in development and not available yet.',
+    status: 'IN DEVELOPMENT',
+  },
+  dex: {
+    title: 'Elementa DEX',
+    description:
+      'A decentralized exchange planned for Elementa Protocol. Not available yet; launch timing and supported regions will be announced.',
+    status: 'COMING SOON',
   },
 }
 

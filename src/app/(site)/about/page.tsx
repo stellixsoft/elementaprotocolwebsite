@@ -9,7 +9,7 @@ import { community } from "@/data/homepage";
 
 export const metadata = {
   title: "About Elementa Protocol | Stellix Soft",
-  description: "Elementa Protocol is a self-custodial multi-chain crypto wallet. Elementa Protocol is a product of Stellix Soft LLC.",
+  description: "Elementa Protocol is a Stellix Soft LLC project: Elementa Wallet (live), Elementa Blockchain (in development) and Elementa DEX (coming soon).",
 };
 
 const AboutPage = () => {

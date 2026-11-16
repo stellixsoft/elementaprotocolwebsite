@@ -279,6 +279,29 @@ export function EcosystemSection({
                 </div>
               </div>
             </ResponsiveMotionDiv>
+
+            {ecosystem.dex ? (
+              <ResponsiveMotionDiv
+                motionProps={fadeUp(0.18)}
+                className="flex flex-col items-center gap-4 rounded-[16px] border border-[rgba(65,71,91,0.15)] px-8 py-8 text-center shadow-none backdrop-blur-[14px] xl:col-span-12 xl:flex-row xl:justify-between xl:px-12 xl:text-left"
+                style={{
+                  background:
+                    "linear-gradient(135deg, rgba(21,111,122, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(21,111,122, 0.5) 100%)",
+                }}
+              >
+                <div className="flex flex-col gap-2">
+                  <h3 className="font-display text-[30px] font-bold leading-9 text-white">
+                    {ecosystem.dex.title}
+                  </h3>
+                  <p className="max-w-[640px] font-body text-[16px] font-normal leading-6 text-[#F5F5F5]">
+                    {ecosystem.dex.description}
+                  </p>
+                </div>
+                <span className="shrink-0 rounded-lg bg-[#1d304a] px-4 py-2 font-body text-[12px] font-semibold uppercase tracking-[0.18em] text-[#24bace]">
+                  {ecosystem.dex.status}
+                </span>
+              </ResponsiveMotionDiv>
+            ) : null}
           </div>
         </div>
       </div>

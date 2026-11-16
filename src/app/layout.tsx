@@ -49,18 +49,18 @@ export const metadata: Metadata = {
     template: "%s | Elementa",
   },
   description:
-    "Elementa Protocol is a self-custodial crypto wallet for Bitcoin, Solana and EVM networks, by Stellix Soft.",
+    "Elementa Protocol by Stellix Soft. Its live product, Elementa Wallet, is a self-custodial crypto wallet for Bitcoin, Solana and EVM networks.",
   openGraph: {
     title: "Elementa Protocol by Stellix Soft",
     description:
-      "Elementa Protocol is a self-custodial crypto wallet for Bitcoin, Solana and EVM networks, by Stellix Soft.",
+      "Elementa Protocol by Stellix Soft. Its live product, Elementa Wallet, is a self-custodial crypto wallet for Bitcoin, Solana and EVM networks.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: "Elementa Protocol by Stellix Soft",
-    description: "Elementa Protocol is a self-custodial crypto wallet for Bitcoin, Solana and EVM networks, by Stellix Soft.",
+    description: "Elementa Protocol by Stellix Soft. Its live product, Elementa Wallet, is a self-custodial crypto wallet for Bitcoin, Solana and EVM networks.",
   },
   icons: { icon: "/favicon.ico" },
 };

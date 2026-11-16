@@ -13,7 +13,7 @@ export default function TermsPage() {
   const sections = [
     <LegalSection key="intro" title="Introduction">
       <p>
-        <strong>Elementa Protocol is a product of {company.legalName}.</strong>
+        <strong>Elementa Wallet is part of Elementa Protocol, a {company.legalName} project.</strong>
       </p>
       <p>
         These Terms of Use and Conditions (&quot;Terms&quot;) govern your access to and use of

@@ -13,7 +13,7 @@ export default function PrivacyPage() {
   const sections = [
     <LegalSection key="intro" title="Introduction">
       <p>
-        <strong>Elementa Protocol is a product of {company.legalName}.</strong>
+        <strong>Elementa Wallet is part of Elementa Protocol, a {company.legalName} project.</strong>
       </p>
       <p>
         This Privacy Policy (&quot;Privacy Policy&quot;) explains how {company.legalName}, {company.registeredAddress}
