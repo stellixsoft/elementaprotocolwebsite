@@ -1008,6 +1008,36 @@ export default function TermsPage() {
       </p>
     </LegalSection>,
 
+    <LegalSection key="t0" title="37. Where the services are offered">
+      <p className="mt-4 first:mt-0">
+        Elementa Wallet is offered in Australia, Botswana, Canada, India, South Africa, the United Kingdom and the United States. It is not offered in the European Economic Area. Buy, Sell and Swap may be limited further by our partners&apos; licences in your country. You must not use the services from a sanctioned country or region, or if you are a sanctioned person.
+      </p>
+    </LegalSection>,
+    <LegalSection key="t1" title="38. Transfer Protection">
+      <p className="mt-4 first:mt-0">
+        Freeze Sending, the optional freeze lock, the daily limit, the whitelist and lookalike-address warnings are tools that help you control outgoing transfers. They run on your device and depend on your settings, the device clock and market prices. Anyone who has your recovery phrase can restore your wallet in other software that does not apply these settings. They reduce risk but cannot guarantee that a transfer is safe, and we are not responsible for transfers you approve. A freeze lock cannot be cancelled early, even if you need to send funds; choose a lock period carefully.
+      </p>
+    </LegalSection>,
+    <LegalSection key="t2" title="39. Third-party services">
+      <p className="mt-4 first:mt-0">
+        Swap quotes are provided by 0x Labs. Buy and Sell are provided by Meld and its licensed partners under their own terms, fees and identity checks. Blockchain networks, RPC providers and market-data providers are operated by third parties. We do not control these services and are not a party to your transactions with them.
+      </p>
+    </LegalSection>,
+    <LegalSection key="t3" title="40. Risk warning (United Kingdom)">
+      <p className="mt-4 first:mt-0">
+        Don&apos;t invest unless you&apos;re prepared to lose all the money you invest. This is a high-risk investment and you should not expect to be protected if something goes wrong. Cryptoassets are not covered by the Financial Ombudsman Service or the Financial Services Compensation Scheme. Elementa Wallet does not give investment advice, and market prices in the app are for information only.
+      </p>
+    </LegalSection>,
+    <LegalSection key="t4" title="41. Your rights under local consumer law">
+      <p className="mt-4 first:mt-0">
+        Nothing in these Terms removes rights you have under consumer laws that cannot be excluded by contract. This includes, for example, the Consumer Rights Act 2015 in the United Kingdom, the Australian Consumer Law, the Consumer Protection Act 2008 in South Africa, the Consumer Protection Act 2019 in India, consumer protection laws of Canadian provinces including Quebec, and the Consumers Protection Act in Botswana. Where those laws apply, our limitations of liability apply only as far as the law allows, and you may bring proceedings in the courts of the place where you live.
+      </p>
+    </LegalSection>,
+    <LegalSection key="t5" title="42. App store terms">
+      <p className="mt-4 first:mt-0">
+        If you downloaded the app from the Apple App Store or Google Play, these Terms are between you and Stellix Soft LLC, not Apple or Google. Apple and Google have no obligation to provide maintenance or support for the app and are not responsible for addressing claims relating to it. Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against you. The store&apos;s own usage rules also apply.
+      </p>
+    </LegalSection>,
     <LegalSection key="ack" title="Acknowledgement">
       <p>
         BY ACCESSING OR USING THE ELEMENTA WALLET OR ANY ELEMENTA SERVICE, YOU

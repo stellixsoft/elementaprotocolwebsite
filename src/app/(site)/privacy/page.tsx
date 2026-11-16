@@ -37,6 +37,27 @@ export default function PrivacyPage() {
       </p>
     </LegalSection>,
 
+    <LegalSection key="summary" title="Summary: what we collect, why, and who receives it">
+      <p className="mt-4 first:mt-0">
+        Elementa Wallet is self-custodial. Your private keys and recovery phrase are created and stored encrypted on your device and are never sent to us. Most features work without an account. The table below lists everything we or our providers process, so you can see it in one place.
+      </p>
+      <ul className="list-disc pl-6 flex flex-col gap-2 mt-4">
+        <li>Wallet use without signing in: we receive no name or email. To show balances, prices and history, the app sends your public wallet addresses to blockchain nodes (RPC providers), our market-data service and block explorers. Public addresses are visible on the blockchain to anyone.</li>
+        <li>Sign in with Apple or Google (optional, for Profile Sync backup): we receive your email address, name, profile picture (if your provider shares it) and a provider account ID. We store a hashed copy of the provider ID and email to recognise your account. Purpose: create and secure your account and restore your backup.</li>
+        <li>Encrypted backup and Profile Sync (optional): we store an encrypted copy of your wallet data and settings. It is encrypted on your device with a key derived from your wallet password, so we cannot read it. Purpose: let you restore your wallet and settings on a new device.</li>
+        <li>Sessions and devices: a hashed device identifier, app version, sign-in sessions, and security events such as restore attempts and revoked devices. Purpose: keep your account secure and let you revoke lost devices.</li>
+        <li>Issue reports and support messages: what you write to us, plus the app version. Purpose: fix problems and answer you.</li>
+        <li>Swaps: the tokens, amounts and wallet address needed to request a quote are sent to 0x (0x Labs), which provides swap routing. Purpose: show you a quote and build the transaction you approve.</li>
+        <li>Buy and Sell: these open a checkout run by Meld and its licensed on-ramp partners. They collect identity, payment and verification details directly under their own privacy policies; we receive only the order status and amounts needed to show your history.</li>
+        <li>Website: if you use the contact form or sign up for launch updates, we receive your name (contact form only), email and message. Our hosting providers keep standard server logs (IP address, browser, pages requested) for security.</li>
+      </ul>
+      <p className="mt-4 first:mt-0">
+        We do not sell your personal information, we do not share it for targeted advertising, and we do not track you across other companies&apos; apps or websites. We do not collect precise location, contacts, photos or health data.
+      </p>
+      <p className="mt-4 first:mt-0">
+        Service providers that process data for us: Railway (application hosting and database), Vercel (website hosting), our email delivery provider, Apple and Google (sign-in), 0x Labs (swap quotes), Meld and its on-ramp partners (Buy and Sell), and blockchain RPC and market-data providers. They may only use the data to provide their service to us, except Meld&apos;s partners and blockchain networks, which act independently under their own terms.
+      </p>
+    </LegalSection>,
     <LegalSection key="1" title="1. Our Commitment to Your Privacy">
       <p>Elementa respects the privacy and security of its users.</p>
       <p>We are committed to:</p>
@@ -1009,6 +1030,90 @@ export default function PrivacyPage() {
       <p className="mt-4">
         BY USING THE SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ AND UNDERSTOOD THIS
         PRIVACY POLICY.
+      </p>
+    </LegalSection>,
+    <LegalSection key="r-intro" title="25. Retention, Rights and Regional Information">
+      <p className="mt-4 first:mt-0">
+        This section adds detail on retention, rights and country-specific rules. Where it differs from earlier sections, this section applies.
+      </p>
+    </LegalSection>,
+    <LegalSection key="r0" title="25.1 Retention and deletion">
+      <ul className="list-disc pl-6 flex flex-col gap-2 mt-4">
+        <li>Account, encrypted backup and Profile Sync data: kept while you use these features. When you delete synced data or your account in the app, we revoke all sessions and permanently delete the server data within 30 days.</li>
+        <li>Session and security records: kept for up to 12 months, then deleted or anonymised.</li>
+        <li>Issue reports and support messages: kept for up to 24 months after the issue is closed.</li>
+        <li>Website contact and launch-update emails: kept until you unsubscribe or ask us to delete them.</li>
+        <li>Data on public blockchains cannot be changed or deleted by anyone, including us.</li>
+        <li>We may keep limited records longer where the law requires it, for example to respond to a legal claim.</li>
+      </ul>
+    </LegalSection>,
+    <LegalSection key="r1" title="25.2 Automated decisions">
+      <p className="mt-4 first:mt-0">
+        We do not make decisions about you that have legal or similarly significant effects using only automated processing. Transfer Protection (Freeze Sending, the daily limit, the whitelist and lookalike-address warnings) applies rules that you set on your own device. Meld&apos;s on-ramp partners may use automated identity and fraud checks under their own policies.
+      </p>
+    </LegalSection>,
+    <LegalSection key="r2" title="25.3 International transfers">
+      <p className="mt-4 first:mt-0">
+        Stellix Soft LLC is based in the United States, and our providers may process data in the United States and other countries. When your data leaves your country, we rely on the safeguards your local law allows, such as contractual commitments from our providers and the protection standards of the receiving country.
+      </p>
+    </LegalSection>,
+    <LegalSection key="r3" title="25.4 Your rights and how to use them">
+      <p className="mt-4 first:mt-0">
+        Depending on where you live, you can ask to access, correct, delete or export your personal information, object to or restrict some processing, and withdraw consent at any time. You can delete synced data and your account directly in the app. For anything else, email info@elementaprotocol.com. We will verify the request and reply within the time your law requires, and in any case within 30 days unless the law allows longer. We will not treat you differently for using your rights.
+      </p>
+      <p className="mt-4 first:mt-0">
+        Complaints: please contact us first at info@elementaprotocol.com so we can try to resolve it. We acknowledge complaints within 30 days. You can also complain to your local data protection authority, listed below.
+      </p>
+    </LegalSection>,
+    <LegalSection key="r4" title="25.5 United States">
+      <p className="mt-4 first:mt-0">
+        Residents of US states with consumer privacy laws, including Texas and California, have the rights described above. We do not sell personal data or sensitive personal data, and we do not use or disclose personal data for targeted advertising or profiling. You can appeal a decision on your request by replying to our response; if you are not satisfied, Texas residents can contact the Texas Attorney General. The services are not directed to children under 13, and we do not knowingly collect their data.
+      </p>
+    </LegalSection>,
+    <LegalSection key="r5" title="25.6 United Kingdom">
+      <p className="mt-4 first:mt-0">
+        For UK users, Stellix Soft LLC is the controller under the UK GDPR and the Data Protection Act 2018. We rely on these legal bases: performing our contract with you (providing the wallet, backup and support), our legitimate interests (security, fraud prevention and improving the services, balanced against your rights), your consent (launch-update emails), and legal obligations.
+      </p>
+      <p className="mt-4 first:mt-0">
+        You have the right to complain to us first; we will acknowledge your complaint within 30 days and respond without undue delay. You can also complain to the Information Commissioner&apos;s Office (ico.org.uk).
+      </p>
+    </LegalSection>,
+    <LegalSection key="r6" title="25.7 Canada">
+      <p className="mt-4 first:mt-0">
+        We handle personal information in line with PIPEDA and, for Quebec residents, Quebec&apos;s Act respecting the protection of personal information in the private sector (Law 25). The person in charge of protecting personal information is the Privacy Officer, Stellix Soft LLC, reachable at info@elementaprotocol.com. You can complain to the Office of the Privacy Commissioner of Canada (priv.gc.ca) or, in Quebec, the Commission d&apos;accès à l&apos;information (cai.gouv.qc.ca).
+      </p>
+    </LegalSection>,
+    <LegalSection key="r7" title="25.8 Australia">
+      <p className="mt-4 first:mt-0">
+        We handle personal information in line with the Australian Privacy Principles in the Privacy Act 1988. Your information may be disclosed to providers in the United States and other countries listed in this policy. You can ask to access or correct your information, and complain to us first; if you are not satisfied with our response within 30 days, you can complain to the Office of the Australian Information Commissioner (oaic.gov.au).
+      </p>
+    </LegalSection>,
+    <LegalSection key="r8" title="25.9 India">
+      <p className="mt-4 first:mt-0">
+        For users in India, Stellix Soft LLC is the Data Fiduciary under the Digital Personal Data Protection Act, 2023 and the DPDP Rules, 2025. We process your personal data for the purposes in this policy on the basis of your consent or legitimate uses allowed by law. You may access a summary of your data, correct, complete, update or erase it, withdraw consent as easily as you gave it, and nominate another person to exercise your rights if you die or become incapacitated.
+      </p>
+      <p className="mt-4 first:mt-0">
+        Grievances: contact our grievance officer, the Privacy Officer, at info@elementaprotocol.com. We will respond within the period required by law and in any case within 90 days. If you are not satisfied, you can approach the Data Protection Board of India.
+      </p>
+    </LegalSection>,
+    <LegalSection key="r9" title="25.10 South Africa">
+      <p className="mt-4 first:mt-0">
+        We process personal information in line with the Protection of Personal Information Act, 2013 (POPIA). The responsible party is Stellix Soft LLC. Providing information for optional features (such as Sign in with Apple or Google) is voluntary; without it those features will not work. Your information may be transferred outside South Africa to the providers listed in this policy, subject to the safeguards POPIA requires. Contact our Information Officer at info@elementaprotocol.com. You can complain to the Information Regulator (inforegulator.org.za).
+      </p>
+    </LegalSection>,
+    <LegalSection key="r10" title="25.11 Botswana">
+      <p className="mt-4 first:mt-0">
+        We process personal data in line with the Data Protection Act, 2024. You have the rights of access, correction, deletion, restriction, portability and objection, including to automated decisions. You can complain to the Information and Data Protection Commission of Botswana.
+      </p>
+    </LegalSection>,
+    <LegalSection key="r11" title="25.12 Children">
+      <p className="mt-4 first:mt-0">
+        The services are for adults. You must be at least 18, or the age of majority where you live if higher. We do not knowingly collect personal information from children; if you believe a child has given us information, contact us and we will delete it.
+      </p>
+    </LegalSection>,
+    <LegalSection key="r12" title="25.13 Contact us">
+      <p className="mt-4 first:mt-0">
+        Stellix Soft LLC, Houston, Texas, United States · info@elementaprotocol.com · +1 (847) 496-9803. Privacy Officer and grievance contact: info@elementaprotocol.com.
       </p>
     </LegalSection>,
   ];
