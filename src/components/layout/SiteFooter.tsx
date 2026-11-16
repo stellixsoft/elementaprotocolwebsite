@@ -25,7 +25,7 @@ export function SiteFooter({
 }) {
   const copyright =
     footer.copyrightLine?.replace("2024", String(new Date().getFullYear())) ??
-    `© ${new Date().getFullYear()} Stellix Soft LLC. Elementa is a product of Stellix Soft. All rights reserved.`;
+    `© ${new Date().getFullYear()} Stellix Soft LLC. All rights reserved.`;
 
   return (
     <footer
@@ -58,7 +58,7 @@ export function SiteFooter({
                 rel="noopener noreferrer"
                 className="font-display text-[10px] font-medium uppercase tracking-[2px] text-[#24bace] text-center xl:text-left hover:underline"
               >
-                {company.legalName} · stellixsoft.com
+                Elementa by Stellix Soft · stellixsoft.com
               </a>
             </div>
 

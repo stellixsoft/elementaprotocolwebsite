@@ -13,6 +13,9 @@ export default function TermsPage() {
   const sections = [
     <LegalSection key="intro" title="Introduction">
       <p>
+        <strong>Elementa is a product of {company.legalName}.</strong>
+      </p>
+      <p>
         These Terms of Use and Conditions (&quot;Terms&quot;) govern your access to and use of
         the Elementa ecosystem, including the Elementa Wallet application,
         website, software, interfaces, APIs, services, features, and related products

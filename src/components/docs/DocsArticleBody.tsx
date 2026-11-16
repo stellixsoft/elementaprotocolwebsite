@@ -9,14 +9,14 @@ export function Introduction() {
       body={
         <>
           <p>
-            Elementa Protocol is a unified digital infrastructure ecosystem designed to power the
+            Elementa is a product of Stellix Soft LLC. It is a unified digital infrastructure ecosystem designed to power the
             next generation of decentralized financial systems, blockchain applications, and exchange
             technologies. It is deliberately <strong>not</strong> marketed as a single app with a
             feature list: it is a <strong>layered architecture</strong> in which wallet, chain, and
             trading surfaces share design language, security assumptions, and upgrade paths.
           </p>
           <p>
-            At its foundation, Elementa Protocol acts as a <strong>development and coordination hub</strong>{" "}
+            At its foundation, Elementa acts as a <strong>development and coordination hub</strong>{" "}
             for decentralized products. That means common standards for how users move assets, how
             modules authenticate to one another, and how new capabilities roll out without breaking
             self-custody or user trust.
@@ -65,7 +65,7 @@ export function VisionAndPurpose() {
       body={
         <>
           <p>
-            The core vision of Elementa Protocol is to <strong>simplify and unify</strong> decentralized
+            The core vision of Elementa is to <strong>simplify and unify</strong> decentralized
             technologies into a structured, accessible, and scalable ecosystem. In practice, that means
             fewer one-off flows, fewer opaque trust assumptions, and a user experience that feels
             intentional end-to-end, from first download to advanced trading or chain operations.
@@ -110,7 +110,7 @@ export function EcosystemHierarchy() {
             standards; upper layers deliver user-facing capability without re-inventing fundamentals
             on every release.
           </p>
-          <h3>3.1 Elementa Protocol (core layer)</h3>
+          <h3>3.1 Elementa core layer</h3>
           <p>
             The protocol layer defines <strong>architectural principles</strong>, shared interfaces, and
             long-term direction. It is where research priorities meet governance of design decisions
@@ -303,7 +303,7 @@ export function ResearchAndDevelopment() {
       body={
         <>
           <p>
-            Elementa Protocol operates as a <strong>continuous research and delivery loop</strong>.
+            Elementa operates as a <strong>continuous research and delivery loop</strong>.
             Instead of treating documentation as static, the ecosystem expects iteration: discover gaps,
             design mitigations, ship in slices, measure outcomes, repeat.
           </p>
@@ -344,7 +344,7 @@ export function MarketPositioning() {
       body={
         <>
           <p>
-            Elementa Protocol competes for attention in a crowded space of wallets, chains, and
+            Elementa competes for attention in a crowded space of wallets, chains, and
             exchanges, but it is not positioning as only one of those categories. The narrative is
             intentionally <strong>multi-layer</strong>: a coherent stack where each layer reinforces the
             others.
@@ -394,7 +394,7 @@ export function ProblemStatement() {
             <li>Limited interoperability without fragile glue scripts and one-off bridges.</li>
           </ul>
           <p>
-            Elementa Protocol responds by building a <strong>unified, structured ecosystem</strong> that
+            Elementa responds by building a <strong>unified, structured ecosystem</strong> that
             reduces fragmentation and improves usability without pretending custody can be “outsourced”
             away. The goal is confidence: users know what layer they are interacting with and what
             guarantees apply.
@@ -450,7 +450,7 @@ export function CurrentStatus() {
       body={
         <>
           <p>
-            Elementa Protocol is in <strong>active development</strong>. The ecosystem is real, but not
+            Elementa is in <strong>active development</strong>. The ecosystem is real, but not
             every layer is live simultaneously, transparency about status helps users and partners align
             expectations with what is shipping today versus what is being built next.
           </p>
@@ -527,7 +527,7 @@ export function Conclusion() {
       body={
         <>
           <p>
-            Elementa Protocol is a long-term effort to reshape how decentralized systems are structured,
+            Elementa is a long-term effort to reshape how decentralized systems are structured,
             accessed, and scaled. It starts from a live wallet product because that is where custody and
             trust are proven daily, then extends into chain and trading layers that inherit the same
             clarity and discipline.
@@ -544,7 +544,7 @@ export function Conclusion() {
           </p>
           <div className="mt-8 rounded-[16px] border border-white/10 bg-white/[0.04] px-5 py-6 text-center sm:px-8">
             <p className="font-display text-sm font-semibold uppercase tracking-[0.18em] text-white/70 md:text-base">
-              Elementa Protocol, building unified decentralized infrastructure for the next era of digital
+              Elementa by Stellix Soft, building unified decentralized infrastructure for the next era of digital
               systems.
             </p>
           </div>

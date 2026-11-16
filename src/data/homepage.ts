@@ -118,7 +118,7 @@ export const featuredGuide = {
   kicker: 'NEW FEATURE GUIDE',
   title: 'Cross Chain Liquidity Guide for DeFi Builders',
   description:
-    'Learn how to leverage omnichain liquidity, optimize cross chain swaps, and build scalable DeFi applications using Elementa Protocol.',
+    'Learn how to leverage omnichain liquidity, optimize cross chain swaps, and build scalable DeFi applications using Elementa.',
   cta: { label: 'Read the Guide', href: '/docs' },
 }
 
@@ -235,7 +235,7 @@ export const ecosystem = {
 
 export const footer = {
   brand: 'Elementa',
-  copyrightLine: '© 2026 Stellix Soft LLC. Elementa is a product of Stellix Soft. All rights reserved.',
+  copyrightLine: '© 2026 Stellix Soft LLC. All rights reserved.',
   links: [
     { label: 'TERMS & CONDITION', href: '/terms' },
     { label: 'PRIVACY POLICY', href: '/privacy' },

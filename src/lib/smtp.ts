@@ -63,7 +63,7 @@ export function getSmtpConfig():
 
   const port = Number(readEnv("EMAIL_PORT") ?? "465");
   const fromEmail = readEnv("EMAIL_FROM") || user;
-  const fromName = readEnv("EMAIL_FROM_NAME") || "Elementa Protocol";
+  const fromName = readEnv("EMAIL_FROM_NAME") || "Elementa by Stellix Soft";
 
   return {
     ok: true,

@@ -13,6 +13,9 @@ export default function PrivacyPage() {
   const sections = [
     <LegalSection key="intro" title="Introduction">
       <p>
+        <strong>Elementa is a product of {company.legalName}.</strong>
+      </p>
+      <p>
         This Privacy Policy (&quot;Privacy Policy&quot;) explains how {company.legalName}, {company.registeredAddress}
         (&quot;Stellix Soft,&quot; &quot;Elementa,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) collects, uses, stores, protects, and
         discloses information in connection with the Elementa ecosystem, including
