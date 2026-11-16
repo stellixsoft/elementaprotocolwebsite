@@ -1,19 +1,20 @@
 import { ContactEmailLink } from "@/components/ui/ContactEmailLink";
 import { LegalPageLayout } from "@/components/legal/LegalPageLayout";
 import { LegalSection } from "@/components/legal/LegalSection";
+import { company } from "@/data/company";
 
 export const metadata = {
-  title: "Privacy Policy | Elementa Protocol",
+  title: "Privacy Policy | Elementa by Stellix Soft",
   description:
-    "How Elementa Protocol collects, uses, stores, protects, and discloses information in connection with the Elementa ecosystem.",
+    "How Stellix Soft LLC collects, uses and protects information when you use the Elementa wallet and website.",
 };
 
 export default function PrivacyPage() {
   const sections = [
     <LegalSection key="intro" title="Introduction">
       <p>
-        This Privacy Policy (&quot;Privacy Policy&quot;) explains how Elementa Protocol
-        (&quot;Elementa,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) collects, uses, stores, protects, and
+        This Privacy Policy (&quot;Privacy Policy&quot;) explains how {company.legalName}, {company.registeredAddress}
+        (&quot;Stellix Soft,&quot; &quot;Elementa,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) collects, uses, stores, protects, and
         discloses information in connection with the Elementa ecosystem, including
         the Elementa Wallet application, website, desktop applications, mobile
         applications, software, APIs, interfaces, and related services
@@ -949,8 +950,9 @@ export default function PrivacyPage() {
         the processing of your personal information, contact us at:
       </p>
       <p>
-        <strong>Elementa Protocol</strong>
+        <strong>{company.legalName}</strong> (operator of Elementa)
       </p>
+      <p>{company.registeredAddress}</p>
       <p>
         <strong>Email:</strong> <ContactEmailLink />
       </p>
@@ -1013,7 +1015,7 @@ export default function PrivacyPage() {
       title="Privacy"
       titleAccent="Policy"
       subtitle="How Elementa collects, uses, and protects your information when you use our services."
-      lastUpdated="May 2026"
+      lastUpdated="November 2026"
     >
       {sections}
     </LegalPageLayout>

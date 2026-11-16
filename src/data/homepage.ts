@@ -3,8 +3,8 @@
  * Copy aligned with Figma file "Elementa-App-UI" (Website Design canvas).
  */
 export const site = {
-  name: 'Elementa Protocol',
-  tagline: 'The unified liquidity and interoperability protocol for the decentralized web.',
+  name: 'Elementa',
+  tagline: 'A self-custodial wallet for Bitcoin, Solana and EVM networks, by Stellix Soft.',
 }
 
 
@@ -42,42 +42,38 @@ export const navigation = {
 
 export const hero = {
   headlineParts: [
-    { text: 'The Leading Cross Chain ', highlight: false },
-    { text: 'Liquidity Protocol', highlight: true },
-    { text: ' for DeFi', highlight: false },
+    { text: 'One self-custodial wallet for ', highlight: false },
+    { text: 'Bitcoin, Solana & EVM', highlight: true },
+    { text: '', highlight: false },
   ],
   subheadline:
-    'Elementa Protocol is a cross chain liquidity protocol delivering instant asset transfers, zero slippage swaps, omnichain liquidity access, and institutional-grade security',
+    'Elementa is a self-custodial crypto wallet by Stellix Soft. Hold, send, receive and swap assets on Bitcoin, Solana, Ethereum, Polygon, BNB Chain and Avalanche. Your keys never leave your device.',
   primaryCta: { label: 'Launch Wallet', href: '/wallet' },
   secondaryCta: { label: 'Read Documentation', href: '/docs' },
 }
 
-export const statsHeading = 'Trusted Cross Chain Liquidity Infrastructure'
+export const statsHeading = ''
 
-export const stats = [
-  { id: 'volume', end: 12.4, suffix: 'B+', decimals: 1, label: 'TOTAL VOLUME (USD)' },
-  { id: 'tvl', end: 850, suffix: 'M+', decimals: 0, label: 'TOTAL VALUE LOCKED' },
-  { id: 'chains', end: 45, suffix: '+', decimals: 0, label: 'SUPPORTED NETWORKS' },
-  { id: 'uptime', end: 99.99, suffix: '%', decimals: 2, label: 'PROTOCOL UPTIME' },
-]
+/** No public metrics yet; publish only verified figures here. */
+export const stats: Array<{ id: string; end: number; suffix: string; decimals: number; label: string }> = []
 
 export const blockchainCards = [
   {
     id: 'bc1',
-    title: 'Omnichain Liquidity',
-    body: 'Access deep cross chain liquidity across leading blockchain ecosystems with optimized routing and efficient asset movement.',
+    title: 'Multi-chain in one wallet',
+    body: 'Manage Bitcoin, Solana and EVM assets (Ethereum, Polygon, BNB Chain, Avalanche) from a single recovery phrase.',
     iconKey: 'what-is-blockchain',
   },
   {
     id: 'bc2',
-    title: 'Zero Slippage Swaps',
-    body: 'Execute cross chain swaps with minimal latency and zero slippage through intelligent liquidity aggregation.',
+    title: 'Swaps with clear quotes',
+    body: 'Swap tokens through third-party routing (0x). You see the quote, network fee and minimum received before you confirm.',
     iconKey: 'multichain',
   },
   {
     id: 'bc3',
-    title: 'Institutional Security',
-    body: 'Enterprise-grade security architecture designed for institutional DeFi applications and large-scale liquidity operations.',
+    title: 'Your keys, on your device',
+    body: 'Keys are generated and encrypted on your phone, protected by your password and Face ID. Optional encrypted backup with Sign in with Apple or Google.',
     iconKey: 'security',
   },
 ]
@@ -130,13 +126,13 @@ export const seoSection = {
   blocks: [
     {
       id: 'what-is',
-      title: 'What is Cross Chain Liquidity?',
-      body: 'Cross chain liquidity allows users and decentralized applications to move assets seamlessly between multiple blockchain networks. Elementa Protocol provides a secure and scalable cross chain liquidity infrastructure that enables instant transfers, liquidity aggregation, and efficient cross chain swaps across the DeFi ecosystem.',
+      title: 'What is a self-custodial wallet?',
+      body: 'A self-custodial wallet keeps your private keys on your own device instead of with a company. Elementa never holds your keys or funds, and cannot move assets without your approval. That also means only you can recover your wallet, using your recovery phrase.',
     },
     {
       id: 'why-elementa',
-      title: 'Why Choose Elementa Protocol?',
-      body: 'Elementa Protocol combines omnichain liquidity, intelligent routing, zero-slippage execution, and institutional-grade security to create a powerful cross chain infrastructure for traders, developers, and enterprises.',
+      title: 'Why Elementa?',
+      body: 'Elementa brings Bitcoin, Solana and EVM networks into one wallet, built on Stellix Soft\'s own wallet engine. Optional Profile Sync backs up encrypted wallet settings with Sign in with Apple or Google, and lets you revoke access from lost devices.',
     },
   ],
 }
@@ -144,131 +140,60 @@ export const seoSection = {
 export const socialProof = {
   title: 'Trusted Cross Chain Liquidity Network',
   subtitle: 'Secured and verified by top infrastructure providers',
-  partners: [
-    { id: 'p1', name: 'A16Z CRYPTO' },
-    { id: 'p2', name: 'FRAMEWORK' },
-    { id: 'p3', name: 'PARADIGM' },
-    { id: 'p4', name: 'SEQUOIA' },
-    { id: 'p5', name: 'PANTERA' },
-  ],
-  testimonials: [
-    {
-      id: 't1',
-      quote:
-        "Elementa's liquidity aggregation is unmatched. We integrated their API in days, instantly unlocking cross-chain deposits for our users with zero extra overhead.",
-      author: 'David Sun',
-      role: 'CTO, Radiant Capital',
-      avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=David',
-    },
-    {
-      id: 't2',
-      quote:
-        "The most reliable interoperability infrastructure we've ever used. Since moving to Elementa, our cross-chain failure rate has essentially dropped to zero.",
-      author: 'Sarah Jenkins',
-      role: 'Head of Product, GMX',
-      avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah',
-    },
-    {
-      id: 't3',
-      quote:
-        'Their smart contract abstraction is a game changer. Users can interact with our dApp from Ethereum without even realizing we are deployed on Arbitrum.',
-      author: 'Michael Osei',
-      role: 'Co-founder, Camelot DEX',
-      avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Michael',
-    },
-    {
-      id: 't4',
-      quote:
-        'Elementa solved the liquidity fragmentation problem perfectly. It operates silently in the background, offering exactly the routing efficiency our institutional clients demand.',
-      author: 'Liam Fitzgerald',
-      role: 'Director of Trading, Wintermute',
-      avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Liam',
-    },
-    {
-      id: 't5',
-      quote:
-        'Security audits and the wallet UX are best-in-class. We recommend Elementa to every builder in our accelerator.',
-      author: 'Priya Nandakumar',
-      role: 'Partner, Lattice Ventures',
-      avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Priya',
-    },
-    {
-      id: 't6',
-      quote:
-        'The developer experience is exceptional. The Elementa SDK makes cross-chain state management feel like working on a single chain.',
-      author: 'Chen Wei',
-      role: 'Lead Architect, Hashflow',
-      avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Chen',
-    },
-    {
-      id: 't7',
-      quote:
-        'As an institutional player, uptime and security are our top priorities. Elementa has consistently delivered on both fronts during peak volatility.',
-      author: 'Jameson Lopp',
-      role: 'Security Engineer, Casa',
-      avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Jameson',
-    },
-    {
-      id: 't8',
-      quote:
-        'The speed of asset transfers via Elementa is noticeably faster than legacy bridges. It is the bridge we actually enjoy using.',
-      author: 'Elena Rossi',
-      role: 'DeFi Strategist, Aave',
-      avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Elena',
-    },
-  ],
+  partners: [] as Array<{ id: string; name: string }>,
+  testimonials: [] as Array<{ id: string; quote: string; author: string; role: string; avatar?: string }>,
 }
 
 export const helpSection = {
   titleLead: 'Developer & User ',
   titleAccent: 'Support',
   titleTrail: ' Center',
-  subtitleBeforeBreak: "Access our comprehensive knowledge base, API documentation, and technical support to build on the Elementa Protocol.",
-  searchPlaceholder: 'Search docs, API references, or tutorials...',
+  subtitleBeforeBreak: "Answers to common questions about the Elementa wallet. Can't find what you need? Contact our support team.",
+  searchPlaceholder: 'Search help articles...',
 }
 
 export const faq = {
-  sectionLabel: 'Technical FAQ',
+  sectionLabel: 'FAQ',
   items: [
     {
       id: 'faq1',
-      question: 'How does Elementa achieve zero-slippage cross-chain swaps?',
+      question: 'Is Elementa custodial?',
       answer:
-        'Elementa utilizes a proprietary Just-In-Time (JIT) liquidity routing algorithm. By aggregating liquidity across 100+ DEXs and employing intent-based execution, the protocol guarantees price execution before the transaction is finalized.',
+        'No. Elementa is self-custodial. Your private keys and recovery phrase are created and stored encrypted on your device. Stellix Soft never has access to them and cannot move your funds.',
       defaultOpen: true,
     },
     {
       id: 'faq2',
-      question: 'How do I integrate the Elementa Widget?',
+      question: 'Which networks does Elementa support?',
       answer:
-        'The Elementa Widget can be integrated into any React or Next.js application using our npm package. It requires less than 10 lines of code and provides out-of-the-box UI for cross-chain deposits and swaps.',
+        'Bitcoin, Solana, Ethereum, Polygon, BNB Chain and Avalanche. We will list new networks here when they are live in the app.',
     },
     {
       id: 'faq3',
-      question: 'What happens if a destination chain experiences downtime?',
+      question: 'What happens if I lose my phone?',
       answer:
-        'If the destination network is congested or halts, the transaction is safely reverted on the source chain through our decentralized oracle network. Funds are never stuck in transit.',
+        'Install Elementa on a new device and restore with your recovery phrase. If you turned on Profile Sync, you can also sign in with Apple or Google to restore your encrypted wallet settings, but you still need your recovery phrase or wallet password.',
     },
     {
       id: 'faq4',
-      question: 'Is the protocol fully audited?',
+      question: 'How do Buy, Sell and Swap work?',
       answer:
-        'Yes. Elementa Protocol undergoes continuous auditing by Trail of Bits and OpenZeppelin. Furthermore, our smart contracts are covered by a $5M bug bounty program on Immunefi.',
+        'Buy and Sell open a checkout run by a licensed third-party provider, whose identity checks and fees apply. Swaps are routed by a third-party service (0x). Availability depends on your country.',
     },
   ],
 }
 
 export const community = {
-  headline: 'Join the Elementa Developer Network',
+  headline: 'Join the Elementa community',
   subheadline:
-    "Connect with over 150,000+ developers, node operators, and DeFi enthusiasts shaping the omnichain future.",
+    'Follow product updates, ask questions and share feedback with the Elementa team.',
   discord: {
     title: 'Discord',
-    description: 'Our primary hub for governance, developer support, and real-time kinetic updates.',
+    description: 'Chat with the team and other Elementa users.',
     cta: 'Join server',
     href: 'https://discord.gg/elementapro',
     members: ['person', 'person2', 'person3'],
-    memberCount: '+12k',
+    memberCount: '',
   },
   twitter: {
     title: 'Twitter',
@@ -283,26 +208,26 @@ export const community = {
     href: 'https://t.me/Elementa',
   },
   newsletter: {
-    kicker: 'WEEKLY DIGEST',
-    title: 'Kinetic Review',
-    description: 'Deep dives into protocol architecture and ecosystem growth.',
-    placeholder: 'elementaprotocol.com',
+    kicker: 'NEWSLETTER',
+    title: 'Elementa updates',
+    description: 'Occasional emails about new features and supported networks.',
+    placeholder: 'you@example.com',
     cta: 'Subscribe',
   },
 }
 export const ecosystem = {
-  sectionTitle: 'Cross Chain DeFi Ecosystem',
+  sectionTitle: 'The Elementa ecosystem',
   wallet: {
     title: 'Elementa Wallet',
     description:
-      'Securely manage assets and access cross chain liquidity from a single unified interface.',
+      'Hold, send, receive and swap assets across Bitcoin, Solana and EVM networks from one self-custodial app.',
     tags: ['Buy', 'Sell', 'Swap'],
   },
   chain: {
     title: 'Elementa Chain',
     description:
-      'A blockchain interoperability layer designed for fast, secure, and scalable cross chain communication.',
-    status: 'COMING SOON',
+      'A planned interoperability network. It is in research and not available yet.',
+    status: 'IN RESEARCH',
   },
 }
 
@@ -310,7 +235,7 @@ export const ecosystem = {
 
 export const footer = {
   brand: 'Elementa',
-  copyrightLine: '© 2026 Elementa GLOBAL INC. ALL RIGHTS RESERVED.',
+  copyrightLine: '© 2026 Stellix Soft LLC. Elementa is a product of Stellix Soft. All rights reserved.',
   links: [
     { label: 'TERMS & CONDITION', href: '/terms' },
     { label: 'PRIVACY POLICY', href: '/privacy' },

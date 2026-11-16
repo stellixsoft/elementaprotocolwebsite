@@ -4,26 +4,13 @@ import dynamic from "next/dynamic";
 import { ScrollRevealSection } from "@/components/ScrollRevealSection";
 import { LazyOnView } from "@/components/LazyOnView";
 import {
-  stats,
-  statsHeading,
   blockchainCards,
-  bento,
-  featuredGuide,
   seoSection,
-  socialProof,
   helpSection,
   faq,
   community,
   ecosystem,
 } from "@/data/homepage";
-
-const HeroStatsBar = dynamic(
-  () =>
-    import("@/components/sections/HeroStatsBar").then((m) => ({
-      default: m.HeroStatsBar,
-    })),
-  { loading: () => null, ssr: false },
-);
 
 const BlockchainSection = dynamic(
   () =>
@@ -33,34 +20,10 @@ const BlockchainSection = dynamic(
   { loading: () => null, ssr: false },
 );
 
-const BentoSection = dynamic(
-  () =>
-    import("@/components/sections/BentoSection").then((m) => ({
-      default: m.BentoSection,
-    })),
-  { loading: () => null, ssr: false },
-);
-
-const FeaturedGuideSection = dynamic(
-  () =>
-    import("@/components/sections/FeaturedGuideSection").then((m) => ({
-      default: m.FeaturedGuideSection,
-    })),
-  { loading: () => null, ssr: false },
-);
-
 const EcosystemSection = dynamic(
   () =>
     import("@/components/sections/EcosystemSection").then((m) => ({
       default: m.EcosystemSection,
-    })),
-  { loading: () => null, ssr: false },
-);
-
-const SocialProofSection = dynamic(
-  () =>
-    import("@/components/sections/SocialProofSection").then((m) => ({
-      default: m.SocialProofSection,
     })),
   { loading: () => null, ssr: false },
 );
@@ -89,13 +52,14 @@ const CommunitySection = dynamic(
   { loading: () => null, ssr: false },
 );
 
-/** Below-fold homepage sections — chunks load on approach, not at hydration. */
+/**
+ * Below-fold homepage sections — chunks load on approach, not at hydration.
+ * Stats, bento metrics, featured guide and social proof were removed: they showed
+ * figures, backers and testimonials that could not be verified.
+ */
 export function HomePageSections() {
   return (
     <>
-      <LazyOnView>
-        <HeroStatsBar stats={stats} heading={statsHeading} />
-      </LazyOnView>
 
       <LazyOnView>
         <ScrollRevealSection>
@@ -103,17 +67,7 @@ export function HomePageSections() {
         </ScrollRevealSection>
       </LazyOnView>
 
-      <LazyOnView>
-        <ScrollRevealSection>
-          <BentoSection bento={bento} />
-        </ScrollRevealSection>
-      </LazyOnView>
 
-      <LazyOnView>
-        <ScrollRevealSection>
-          <FeaturedGuideSection guide={featuredGuide} />
-        </ScrollRevealSection>
-      </LazyOnView>
 
       <LazyOnView>
         <ScrollRevealSection>
@@ -121,11 +75,6 @@ export function HomePageSections() {
         </ScrollRevealSection>
       </LazyOnView>
 
-      <LazyOnView>
-        <ScrollRevealSection>
-          <SocialProofSection socialProof={socialProof} />
-        </ScrollRevealSection>
-      </LazyOnView>
 
       <LazyOnView>
         <ScrollRevealSection>

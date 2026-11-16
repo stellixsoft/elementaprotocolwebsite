@@ -11,6 +11,7 @@ import {
   INVALID_EMAIL_MESSAGE,
 } from "@/lib/emailValidation";
 import { PageHeroBackground } from "../ui/PageHeroBackground";
+import { company } from "@/data/company";
 
 type Toast = { type: "success" | "error"; message: string } | null;
 
@@ -164,6 +165,13 @@ export function ContactPage() {
                     <p className="mt-3 max-w-2xl font-body text-[clamp(0.9rem,2vw,1.1rem)] font-light leading-relaxed text-Elementa-muted text-center">
                       Reach the Elementa team for support, partnerships, or inquiries.
                     </p>
+                    <address className="mt-4 not-italic font-body text-sm leading-relaxed text-Elementa-muted text-center">
+                      {company.legalName} (operator of Elementa)
+                      <br />
+                      {company.registeredAddress}
+                      <br />
+                      {company.supportEmail}
+                    </address>
                   </motion.div>
 
                   <form className="space-y-5 sm:space-y-6" onSubmit={handleSubmit} noValidate>

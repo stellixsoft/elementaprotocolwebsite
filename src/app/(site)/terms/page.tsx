@@ -1,11 +1,12 @@
 import { ContactEmailLink } from "@/components/ui/ContactEmailLink";
 import { LegalPageLayout } from "@/components/legal/LegalPageLayout";
 import { LegalSection } from "@/components/legal/LegalSection";
+import { company } from "@/data/company";
 
 export const metadata = {
-  title: "Terms and Conditions | Elementa Protocol",
+  title: "Terms of Use | Elementa by Stellix Soft",
   description:
-    "Terms of Use and Conditions governing your access to and use of the Elementa Protocol ecosystem.",
+    "Terms of Use for the Elementa wallet and website, provided by Stellix Soft LLC.",
 };
 
 export default function TermsPage() {
@@ -13,12 +14,12 @@ export default function TermsPage() {
     <LegalSection key="intro" title="Introduction">
       <p>
         These Terms of Use and Conditions (&quot;Terms&quot;) govern your access to and use of
-        the Elementa Protocol ecosystem, including the Elementa Wallet application,
+        the Elementa ecosystem, including the Elementa Wallet application,
         website, software, interfaces, APIs, services, features, and related products
         (collectively, the &quot;Services&quot;).
       </p>
       <p>
-        The Services are provided by Elementa Protocol (&quot;Elementa,&quot; &quot;we,&quot; &quot;us,&quot; or
+        The Services are provided by {company.legalName}, a limited liability company organized in {company.stateOfFormation}, with its registered address at {company.registeredAddress} (&quot;Stellix Soft,&quot; &quot;Elementa,&quot; &quot;we,&quot; &quot;us,&quot; or
         &quot;our&quot;).
       </p>
       <p>
@@ -929,13 +930,13 @@ export default function TermsPage() {
 
     <LegalSection key="30" title="30. Governing Law">
       <p>
-        These Terms shall be governed by the laws applicable to Elementa Protocol&apos;s
-        operating entity, without regard to conflict-of-law principles.
-      </p>
-      <p className="mt-4">
-        Any dispute arising from or relating to these Terms or the Services shall be
-        subject to the exclusive jurisdiction of the courts located in that
-        jurisdiction, unless applicable law requires otherwise.
+        These Terms are governed by the laws of the State of {company.stateOfFormation},
+        United States, without regard to conflict-of-law principles. Subject to the
+        Dispute Resolution section, any dispute arising from or relating to these
+        Terms or the Services shall be subject to the exclusive jurisdiction of the
+        state and federal courts located in {company.stateOfFormation}, unless the
+        mandatory consumer-protection laws of your country of residence give you the
+        right to bring proceedings where you live.
       </p>
     </LegalSection>,
 
@@ -996,8 +997,9 @@ export default function TermsPage() {
     <LegalSection key="36" title="36. Contact">
       <p>Questions regarding these Terms may be directed to:</p>
       <p>
-        <strong>Elementa Protocol</strong>
+        <strong>{company.legalName}</strong> (operator of Elementa)
       </p>
+      <p>{company.registeredAddress}</p>
       <p>
         <strong>Email:</strong> <ContactEmailLink />
       </p>
@@ -1038,7 +1040,7 @@ export default function TermsPage() {
       title="Terms &"
       titleAccent="Conditions"
       subtitle="Rules that govern your use of Elementa websites, wallet, and related services."
-      lastUpdated="May 2026"
+      lastUpdated="November 2026"
     >
       {sections}
     </LegalPageLayout>

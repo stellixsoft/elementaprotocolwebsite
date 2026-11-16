@@ -4,7 +4,7 @@ import { ContactPage } from "@/components/contact/ContactPage";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Reach Elementa Protocol address, email, phone, and contact form. Connect with support, partnerships, and the community.",
+    "Contact Stellix Soft LLC about the Elementa wallet: support, partnerships and legal enquiries.",
 };
 
 export default function Page() {

@@ -5,15 +5,6 @@ import { ScrollRevealSection } from "@/components/ScrollRevealSection";
 import { LazyOnView } from "@/components/LazyOnView";
 import { walletFaq } from "@/data/walletPage";
 import { helpSection, community } from "@/data/homepage";
-import { WalletHeroMetricsFallback } from "@/components/sections/WalletHeroMetrics";
-
-const WalletHeroMetrics = dynamic(
-  () =>
-    import("@/components/sections/WalletHeroMetrics").then((m) => ({
-      default: m.WalletHeroMetrics,
-    })),
-  { loading: () => <WalletHeroMetricsFallback />, ssr: false },
-);
 
 const CoreCapabilitiesSection = dynamic(
   () =>
@@ -67,9 +58,6 @@ const CommunitySection = dynamic(
 export function WalletPageSections() {
   return (
     <>
-      <LazyOnView>
-        <WalletHeroMetrics />
-      </LazyOnView>
 
       <LazyOnView>
         <ScrollRevealSection>

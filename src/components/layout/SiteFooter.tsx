@@ -8,6 +8,7 @@ import Link from "next/link";
 import type { FooterContent } from "@/data/homepage";
 import { cn } from "@/utils/cn";
 import { FooterNavLinks } from "@/components/layout/FooterNavLinks";
+import { company } from "@/data/company";
 
 const socialIcons = {
   twitter: twitterIcon,
@@ -24,7 +25,7 @@ export function SiteFooter({
 }) {
   const copyright =
     footer.copyrightLine?.replace("2024", String(new Date().getFullYear())) ??
-    `© ${new Date().getFullYear()} Elementa PROTOCOL. ALL RIGHTS RESERVED.`;
+    `© ${new Date().getFullYear()} Stellix Soft LLC. Elementa is a product of Stellix Soft. All rights reserved.`;
 
   return (
     <footer
@@ -51,6 +52,14 @@ export function SiteFooter({
               <p className="font-display text-[10px] font-medium uppercase leading-relaxed tracking-[2px] text-[#FFFFFF] text-center xl:text-left opacity-70">
                 {copyright}
               </p>
+              <a
+                href={company.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-display text-[10px] font-medium uppercase tracking-[2px] text-[#24bace] text-center xl:text-left hover:underline"
+              >
+                {company.legalName} · stellixsoft.com
+              </a>
             </div>
 
             {/* Navigation Links */}

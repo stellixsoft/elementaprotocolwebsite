@@ -6,9 +6,9 @@ import { Wallet, RefreshCcw, BarChart3, Key } from "lucide-react";
 
 const features = [
   { icon: <Wallet className="w-5 h-5 text-[#24bace]" />, title: "Multi-chain wallet" },
-  { icon: <RefreshCcw className="w-5 h-5 text-[#24bace]" />, title: "Instant swaps" },
-  { icon: <BarChart3 className="w-5 h-5 text-[#24bace]" />, title: "DeFi integrations" },
-  { icon: <Key className="w-5 h-5 text-[#24bace]" />, title: "Secure identity layer" },
+  { icon: <RefreshCcw className="w-5 h-5 text-[#24bace]" />, title: "Token swaps" },
+  { icon: <BarChart3 className="w-5 h-5 text-[#24bace]" />, title: "Market prices" },
+  { icon: <Key className="w-5 h-5 text-[#24bace]" />, title: "Encrypted Profile Sync" },
 ];
 
 const AboutMoreThanWallet = () => {
@@ -28,7 +28,7 @@ const AboutMoreThanWallet = () => {
                 More Than a Wallet
               </h2>
               <p className="mx-auto max-w-3xl">
-                Elementa connects wallets, chains, and financial tools into one unified experience. From asset management to cross-chain swaps, everything you need is integrated into a single platform.
+                Elementa brings Bitcoin, Solana and EVM networks into one self-custodial app: hold, send, receive and swap assets, with optional encrypted backup through Profile Sync.
               </p>
             </motion.div>
           </div>

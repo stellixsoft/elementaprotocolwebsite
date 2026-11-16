@@ -6,7 +6,7 @@ import { hero } from "@/data/homepage";
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "Elementa Protocol multi-chain liquidity and DeFi infrastructure for builders and users.",
+    "Elementa is a self-custodial crypto wallet for Bitcoin, Solana and EVM networks, built by Stellix Soft LLC.",
 };
 
 export default function Page() {

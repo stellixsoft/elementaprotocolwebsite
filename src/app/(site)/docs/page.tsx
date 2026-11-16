@@ -7,7 +7,7 @@ import { docsToc } from "@/data/docsPage";
 export const metadata: Metadata = {
   title: "Documentation",
   description:
-    "Elementa Protocol documentation for wallet, ecosystem, security, and roadmap.",
+    "Elementa documentation: wallet, security model and roadmap.",
 };
 
 export default function DocsPage() {

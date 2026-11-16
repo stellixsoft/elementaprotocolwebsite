@@ -25,7 +25,7 @@ const AboutNextGen = () => {
               
               <div className="space-y-6">
                 <p className="text-lg leading-relaxed text-white md:text-xl">
-                  We are a team of engineers, designers, and blockchain innovators focused on removing friction from decentralized finance.
+                  Elementa is built by Stellix Soft LLC, a software company whose engineers and designers focus on making self-custody simple.
                 </p>
                 <p className="text-lg leading-relaxed text-white md:text-xl">
                   Elementa was created to bridge the gap between complex blockchain systems and real-world usability delivering tools that are powerful, intuitive, and scalable.

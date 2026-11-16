@@ -4,12 +4,13 @@
  */
 export const walletHero = {
   headlineParts: [
-    { text: 'Web3 Wallet', highlight: true },
-    { text: ' & Cross-Chain Liquidity', highlight: false },
+    { text: 'Elementa Wallet', highlight: true },
+    { text: ': Bitcoin, Solana & EVM in one app', highlight: false },
   ],
   subheadline:
-    'Elementa Web3 Wallet provides secure access to cross-chain liquidity, DeFi, Bitcoin Ordinals, Solana, and 50+ blockchain networks in one omnichain platform.',
-  primaryCta: { label: 'Download Wallet', href: '#' },
+    'A self-custodial wallet by Stellix Soft for Bitcoin, Solana, Ethereum, Polygon, BNB Chain and Avalanche. Keys stay encrypted on your device.',
+  // TODO: replace with the App Store / Google Play listing URLs once live.
+  primaryCta: { label: 'Get the app', href: '/contact' },
   secondaryCta: { label: 'View Documentation', href: '/docs' },
 }
 
@@ -18,51 +19,51 @@ export type WalletHeroContent = typeof walletHero
 export const walletSecurity = {
   title: 'Uncompromising Security Architecture',
   bullets: [
-    'Zero-Knowledge proofs and MPC-based signing flows for absolute privacy.',
-    'Hardware wallet integration for institutional-grade asset protection.',
-    'Decentralized identity recovery powered by Elementa nodes.',
-    'Strictly non-custodial: you maintain complete sovereignty over your keys.',
+    'Keys and recovery phrase are generated and encrypted on your device.',
+    'Wallet password and Face ID protect access; repeated wrong passwords trigger a lockout.',
+    'Optional Profile Sync: encrypted backup with Sign in with Apple or Google, with per-device revocation.',
+    'Strictly self-custodial: Stellix Soft never holds your keys or funds.',
   ],
 }
 
 export const walletFeatures = {
-  sectionTitle: 'Built for true interoperability',
-  sectionSubtitle: 'Experience the fastest routing engine combined with absolute self-custody. Seamlessly manage assets across 50+ blockchains.',
+  sectionTitle: 'What Elementa does today',
+  sectionSubtitle: 'Bitcoin, Solana and four EVM networks in one self-custodial wallet.',
   items: [
     {
       id: 'wf1',
       title: 'Complete Sovereignty',
-      body: 'Your keys, your crypto. The Elementa Wallet utilizes secure enclaves to ensure your assets are impenetrable.',
+      body: 'Your keys, your crypto. Keys are encrypted on your device and never sent to our servers.',
       iconKey: 'shield',
     },
     {
       id: 'wf2',
       title: 'Biometric Authentication',
-      body: 'Frictionless access via FaceID and TouchID, blending Web2 convenience with Web3 security standards.',
+      body: 'Unlock with Face ID or your wallet password.',
       iconKey: 'fingerprint',
     },
     {
       id: 'wf3',
-      title: 'Omnichain Swaps',
-      body: 'Execute complex cross-chain trades natively. Elementa routes through 100+ DEXs for optimal price execution.',
+      title: 'Token Swaps',
+      body: 'Swap tokens with quotes from a third-party router (0x). Review the rate, fee and minimum received before you confirm.',
       iconKey: 'swap',
     },
     {
       id: 'wf4',
-      title: 'Transaction Simulation',
-      body: 'Advanced smart contract decoding simulates your transaction outcomes before you ever sign.',
+      title: 'Clear Confirmations',
+      body: 'See the network, recipient, amount and fee before every send.',
       iconKey: 'file',
     },
     {
       id: 'wf5',
       title: 'Unified Dashboard',
-      body: 'Track your entire portfolio across L1s, L2s, and AppChains in one cohesive, real-time interface.',
+      body: 'See balances across every supported network in one portfolio view, with market prices for reference.',
       iconKey: 'chart',
     },
     {
       id: 'wf6',
-      title: 'Social Recovery',
-      body: 'Mitigate the risk of seed phrase loss with encrypted, decentralized social recovery mechanisms.',
+      title: 'Profile Sync Backup',
+      body: 'Optionally back up encrypted wallet settings with Sign in with Apple or Google, and revoke lost devices.',
       iconKey: 'key',
     },
   ],
@@ -76,26 +77,26 @@ export const walletFaq = {
       id: 'wfq1',
       question: 'Is the Elementa Wallet fully non-custodial?',
       answer:
-        'Absolutely. Elementa operates on a strict zero-knowledge architecture. Your private keys are encrypted locally and never transmitted to our servers.',
+        'Yes. Your private keys and recovery phrase are encrypted on your device and never sent to our servers. Stellix Soft cannot access or move your funds.',
       defaultOpen: true,
     },
     {
       id: 'wfq2',
       question: 'Which networks are currently supported?',
       answer:
-        'Elementa natively supports Ethereum, Solana, Cosmos, all major EVM L2s (Arbitrum, Optimism, Base), and is continuously integrating new AppChains.',
+        'Bitcoin, Solana, Ethereum, Polygon, BNB Chain and Avalanche.',
     },
     {
       id: 'wfq3',
-      question: 'Can I connect my hardware wallet?',
+      question: 'Can I connect a hardware wallet?',
       answer:
-        'Yes. Elementa provides seamless integration with Ledger, Trezor, and Keystone, allowing you to use our interface while signing offline.',
+        'Not yet. Elementa currently works with software keys stored on your phone.',
     },
     {
       id: 'wfq4',
-      question: 'How does the wallet calculate cross-chain fees?',
+      question: 'What fees do I pay?',
       answer:
-        'Our routing engine simulates the transaction across multiple bridges and DEXs, quoting you a unified fee that covers source gas, destination gas, and bridging costs upfront.',
+        'You pay the blockchain network fee for each transaction. Swaps and Buy/Sell may include fees from the third-party provider, shown before you confirm.',
     },
   ],
 }
@@ -107,15 +108,15 @@ export const coreCapabilities = {
       id: 'cc1',
       title: 'Swap Instantly',
       description:
-        'Swap crypto across multiple blockchain networks using optimized liquidity routing for the best exchange rates with minimal slippage.',
+        'Swap tokens using quotes from a third-party router (0x), with the rate, fee and minimum received shown before you confirm.',
       type: 'large',
       iconAsset: 'coreLogo',
     },
     {
       id: 'cc2',
-      title: '50+ Blockchains',
+      title: '6 Networks',
       description:
-        'Access Ethereum, Solana, Bitcoin, BNB Chain, Polygon, Avalanche, Base and more from one Web3 wallet.',
+        'Bitcoin, Solana, Ethereum, Polygon, BNB Chain and Avalanche from one wallet.',
       type: 'small',
       iconAsset: 'blockchainLogo',
     },
@@ -123,17 +124,17 @@ export const coreCapabilities = {
       id: 'cc3',
       title: 'EVM Pro',
       description:
-        'Secure management of Ethereum-compatible assets with native Layer-2 support and advanced transaction controls.',
+        'Manage tokens on Ethereum, Polygon, BNB Chain and Avalanche, and import custom tokens.',
       tags: ['ETH', 'EVM'],
       type: 'bottom',
       iconAsset: 'evmLogo',
     },
     {
       id: 'cc4',
-      title: 'Bitcoin Ordinals',
+      title: 'Bitcoin',
       description:
-        'Safely store, manage and transfer Bitcoin Ordinals, BRC-20 assets and BTC NFTs.',
-      tags: ['BTC', 'ORDI'],
+        'Send and receive bitcoin with the same recovery phrase as your other networks.',
+      tags: ['BTC'],
       type: 'bottom',
       iconAsset: 'bitcoinLogo',
     },
@@ -141,8 +142,8 @@ export const coreCapabilities = {
       id: 'cc5',
       title: 'Solana Native',
       description:
-        'Fast and secure Solana wallet with staking, token management and DeFi integrations.',
-      tags: ['SOL', 'JUP'],
+        'Hold, send and receive SOL and Solana tokens.',
+      tags: ['SOL'],
       type: 'bottom',
       iconAsset: 'solanaLogo',
     },
@@ -154,32 +155,32 @@ export const powerWalletData = {
   items: [
     {
       id: 'pw1',
-      title: 'Omnichain Accessibility',
+      title: 'One Recovery Phrase',
       description:
-        'Connect to 50+ blockchain networks from a single decentralized wallet.',
+        'Bitcoin, Solana and EVM accounts from a single recovery phrase.',
       iconKey: 'multiChainIcon',
     },
     {
       id: 'pw2',
-      title: 'Institutional Security',
+      title: 'On-Device Security',
       description:
-        'Enterprise-grade encryption, smart contract audits and non-custodial key management.',
+        'Encrypted keys, Face ID and a lockout after repeated wrong passwords.',
       iconKey: 'secureInfraIcon',
     },
     {
       id: 'pw3',
-      title: 'JIT Liquidity Routing',
+      title: 'Available Where Licensed',
       description:
-        'Smart liquidity routing automatically finds the best cross-chain trading path.',
+        'Buy, Sell and Swap are offered only in countries where our partners are licensed.',
       iconKey: 'fastTransactionsIcon',
     },
   ],
 }
 
 export const joinWalletData = {
-  title: 'Experience the Future of Web3 Wallets',
+  title: 'Take control of your crypto',
   description:
-    'Take complete control of your digital assets with a secure, decentralized wallet designed for cross-chain liquidity, institutional security and seamless DeFi access.',
+    'Elementa keeps your keys on your device and your assets across Bitcoin, Solana and EVM networks in one place.',
   primaryCta: 'Download App',
   secondaryCta: 'Know More',
 }

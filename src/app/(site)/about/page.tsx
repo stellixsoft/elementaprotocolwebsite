@@ -3,14 +3,13 @@ import AboutHero from "@/components/about/AboutHero";
 import AboutNextGen from "@/components/about/AboutNextGen";
 import AboutWhatDrivesUs from "@/components/about/AboutWhatDrivesUs";
 import AboutVisionMission from "@/components/about/AboutVisionMission";
-import AboutTrustedEcosystem from "@/components/about/AboutTrustedEcosystem";
 import AboutMoreThanWallet from "@/components/about/AboutMoreThanWallet";
 import { CommunitySection } from "@/components/sections/CommunitySection";
 import { community } from "@/data/homepage";
 
 export const metadata = {
-  title: "About Us | Elementa Protocol",
-  description: "Learn about Elementa Protocol, the future of multi-chain finance and decentralized infrastructure.",
+  title: "About Elementa | Stellix Soft",
+  description: "Elementa is a self-custodial multi-chain crypto wallet built by Stellix Soft LLC.",
 };
 
 const AboutPage = () => {
@@ -20,7 +19,6 @@ const AboutPage = () => {
       <AboutNextGen />
       <AboutWhatDrivesUs />
       <AboutVisionMission />
-      <AboutTrustedEcosystem />
       <AboutMoreThanWallet />
       <CommunitySection community={community} />
     </div>
