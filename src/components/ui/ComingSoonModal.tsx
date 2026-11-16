@@ -51,12 +51,27 @@ export function ComingSoonModal({
         <p className="mt-4 font-body text-sm leading-relaxed text-white/75 sm:text-base">
           {message}
         </p>
+        <a
+          href="/#community-section"
+          onClick={(e) => {
+            // Stay on the current page when it has the sign-up section; otherwise go to the home page one.
+            const section = document.getElementById("community-section");
+            if (section) {
+              e.preventDefault();
+              section.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+            onClose();
+          }}
+          className="btn-primary mt-8 block w-full py-3.5 text-sm font-bold uppercase tracking-widest"
+        >
+          Notify me at launch
+        </a>
         <button
           type="button"
           onClick={onClose}
-          className="btn-primary mt-8 w-full py-3.5 text-sm font-bold uppercase tracking-widest"
+          className="mt-4 w-full py-2 font-body text-sm text-white/60 transition-colors hover:text-white"
         >
-          Got it
+          Close
         </button>
       </div>
     </div>
