@@ -8,8 +8,8 @@ import { CommunitySection } from "@/components/sections/CommunitySection";
 import { community } from "@/data/homepage";
 
 export const metadata = {
-  title: "About Elementa | Stellix Soft",
-  description: "Elementa is a self-custodial multi-chain crypto wallet built by Stellix Soft LLC.",
+  title: "About Elementa Protocol | Stellix Soft",
+  description: "Elementa Protocol is a self-custodial multi-chain crypto wallet. Elementa Protocol is a product of Stellix Soft LLC.",
 };
 
 const AboutPage = () => {

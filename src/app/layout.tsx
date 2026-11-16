@@ -45,22 +45,22 @@ function getMetadataBase(): URL {
 export const metadata: Metadata = {
   metadataBase: getMetadataBase(),
   title: {
-    default: "Elementa Wallet by Stellix Soft",
+    default: "Elementa Protocol by Stellix Soft",
     template: "%s | Elementa",
   },
   description:
-    "Elementa is a self-custodial crypto wallet for Bitcoin, Solana and EVM networks, built by Stellix Soft LLC.",
+    "Elementa Protocol is a self-custodial crypto wallet for Bitcoin, Solana and EVM networks, by Stellix Soft.",
   openGraph: {
-    title: "Elementa Wallet by Stellix Soft",
+    title: "Elementa Protocol by Stellix Soft",
     description:
-      "Elementa is a self-custodial crypto wallet for Bitcoin, Solana and EVM networks, built by Stellix Soft LLC.",
+      "Elementa Protocol is a self-custodial crypto wallet for Bitcoin, Solana and EVM networks, by Stellix Soft.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elementa Wallet by Stellix Soft",
-    description: "Elementa is a self-custodial crypto wallet for Bitcoin, Solana and EVM networks, built by Stellix Soft LLC.",
+    title: "Elementa Protocol by Stellix Soft",
+    description: "Elementa Protocol is a self-custodial crypto wallet for Bitcoin, Solana and EVM networks, by Stellix Soft.",
   },
   icons: { icon: "/favicon.ico" },
 };

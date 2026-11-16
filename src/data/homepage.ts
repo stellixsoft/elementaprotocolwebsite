@@ -3,8 +3,8 @@
  * Copy aligned with Figma file "Elementa-App-UI" (Website Design canvas).
  */
 export const site = {
-  name: 'Elementa',
-  tagline: 'A self-custodial wallet for Bitcoin, Solana and EVM networks, by Stellix Soft.',
+  name: 'Elementa Protocol',
+  tagline: 'Elementa Protocol: a self-custodial wallet for Bitcoin, Solana and EVM networks, by Stellix Soft.',
 }
 
 
@@ -47,7 +47,7 @@ export const hero = {
     { text: '', highlight: false },
   ],
   subheadline:
-    'Elementa is a self-custodial crypto wallet by Stellix Soft. Hold, send, receive and swap assets on Bitcoin, Solana, Ethereum, Polygon, BNB Chain and Avalanche. Your keys never leave your device.',
+    'Elementa Protocol is a self-custodial crypto wallet by Stellix Soft. Hold, send, receive and swap assets on Bitcoin, Solana, Ethereum, Polygon, BNB Chain and Avalanche. Your keys never leave your device.',
   primaryCta: { label: 'Launch Wallet', href: '/wallet' },
   secondaryCta: { label: 'Read Documentation', href: '/docs' },
 }

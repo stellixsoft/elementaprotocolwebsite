@@ -4,8 +4,8 @@
  */
 export const walletHero = {
   headlineParts: [
-    { text: 'Elementa Wallet', highlight: true },
-    { text: ': Bitcoin, Solana & EVM in one app', highlight: false },
+    { text: 'Elementa Protocol', highlight: true },
+    { text: ': Bitcoin, Solana & EVM in one wallet', highlight: false },
   ],
   subheadline:
     'A self-custodial wallet by Stellix Soft for Bitcoin, Solana, Ethereum, Polygon, BNB Chain and Avalanche. Keys stay encrypted on your device.',

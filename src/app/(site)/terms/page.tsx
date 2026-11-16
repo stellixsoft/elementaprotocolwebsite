@@ -4,7 +4,7 @@ import { LegalSection } from "@/components/legal/LegalSection";
 import { company } from "@/data/company";
 
 export const metadata = {
-  title: "Terms of Use | Elementa by Stellix Soft",
+  title: "Terms of Use | Elementa Protocol",
   description:
     "Terms of Use for the Elementa wallet and website, provided by Stellix Soft LLC.",
 };
@@ -13,7 +13,7 @@ export default function TermsPage() {
   const sections = [
     <LegalSection key="intro" title="Introduction">
       <p>
-        <strong>Elementa is a product of {company.legalName}.</strong>
+        <strong>Elementa Protocol is a product of {company.legalName}.</strong>
       </p>
       <p>
         These Terms of Use and Conditions (&quot;Terms&quot;) govern your access to and use of
@@ -1000,7 +1000,7 @@ export default function TermsPage() {
     <LegalSection key="36" title="36. Contact">
       <p>Questions regarding these Terms may be directed to:</p>
       <p>
-        <strong>{company.legalName}</strong> (operator of Elementa)
+        <strong>{company.legalName}</strong> (operator of {company.productName})
       </p>
       <p>{company.registeredAddress}</p>
       <p>

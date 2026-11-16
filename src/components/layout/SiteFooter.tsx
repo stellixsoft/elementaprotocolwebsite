@@ -58,7 +58,7 @@ export function SiteFooter({
                 rel="noopener noreferrer"
                 className="font-display text-[10px] font-medium uppercase tracking-[2px] text-[#24bace] text-center xl:text-left hover:underline"
               >
-                Elementa by Stellix Soft · stellixsoft.com
+                Elementa Protocol by Stellix Soft · stellixsoft.com
               </a>
             </div>
 

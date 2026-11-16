@@ -166,7 +166,7 @@ export function ContactPage() {
                       Reach the Elementa team for support, partnerships, or inquiries.
                     </p>
                     <address className="mt-4 not-italic font-body text-sm leading-relaxed text-Elementa-muted text-center">
-                      {company.legalName} (operator of Elementa)
+                      {company.legalName} (operator of {company.productName})
                       <br />
                       {company.registeredAddress}
                       <br />

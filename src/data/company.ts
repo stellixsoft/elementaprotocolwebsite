@@ -4,7 +4,7 @@
  */
 export const company = {
   legalName: 'Stellix Soft LLC',
-  productName: 'Elementa',
+  productName: 'Elementa Protocol',
   /** e.g. "Wyoming" — the state where Stellix Soft LLC is organized. */
   stateOfFormation: '[STATE OF FORMATION]',
   /** Registered postal address, one line. */

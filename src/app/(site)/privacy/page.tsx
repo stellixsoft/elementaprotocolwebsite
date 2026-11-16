@@ -4,7 +4,7 @@ import { LegalSection } from "@/components/legal/LegalSection";
 import { company } from "@/data/company";
 
 export const metadata = {
-  title: "Privacy Policy | Elementa by Stellix Soft",
+  title: "Privacy Policy | Elementa Protocol",
   description:
     "How Stellix Soft LLC collects, uses and protects information when you use the Elementa wallet and website.",
 };
@@ -13,7 +13,7 @@ export default function PrivacyPage() {
   const sections = [
     <LegalSection key="intro" title="Introduction">
       <p>
-        <strong>Elementa is a product of {company.legalName}.</strong>
+        <strong>Elementa Protocol is a product of {company.legalName}.</strong>
       </p>
       <p>
         This Privacy Policy (&quot;Privacy Policy&quot;) explains how {company.legalName}, {company.registeredAddress}
@@ -953,7 +953,7 @@ export default function PrivacyPage() {
         the processing of your personal information, contact us at:
       </p>
       <p>
-        <strong>{company.legalName}</strong> (operator of Elementa)
+        <strong>{company.legalName}</strong> (operator of {company.productName})
       </p>
       <p>{company.registeredAddress}</p>
       <p>
