@@ -29,13 +29,12 @@ export function WalletHeroSection({ hero }: { hero: WalletHeroContent }) {
           </p>
 
           <div className="flex w-full flex-col items-stretch justify-center gap-3 px-1 pt-1 sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:gap-4 sm:px-0 sm:pt-2 md:pt-4">
-            <button
-              type="button"
-              id="wallet-download-cta"
+            <a
+              href={hero.primaryCta.href}
               className="btn-primary w-full px-8 py-3 font-body text-base leading-7 sm:w-auto sm:px-10 sm:py-5 sm:text-xl"
             >
               {hero.primaryCta.label}
-            </button>
+            </a>
             <a
               href={hero.secondaryCta.href}
               className="btn-secondary w-full px-8 py-3 font-body text-base leading-7 sm:w-auto sm:px-10 sm:py-5 sm:text-xl"

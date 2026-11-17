@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import grayDots from "@/assets/gray-dots.png (1).png";
 import { joinWalletData } from "../../data/walletPage";
-import { DownloadAppButton } from "@/components/ui/DownloadAppButton";
 
 export function JoinWalletSection() {
   return (
@@ -65,9 +64,12 @@ export function JoinWalletSection() {
               transition={{ delay: 0.4 }}
               className="mt-8 flex w-full flex-col items-stretch justify-start gap-4 sm:flex-col sm:items-normal lg:flex-row xl:flex-row"
             >
-              <DownloadAppButton className="btn-primary h-[56px] w-full px-10 font-display text-[14px] font-bold tracking-widest sm:w-auto md:h-[64px] md:px-12 md:text-[15px]">
+              <a
+                href={joinWalletData.primaryCtaHref}
+                className="btn-primary inline-flex h-[56px] w-full items-center justify-center px-10 font-display text-[14px] font-bold tracking-widest sm:w-auto md:h-[64px] md:px-12 md:text-[15px]"
+              >
                 {joinWalletData.primaryCta}
-              </DownloadAppButton>
+              </a>
               <Link
                 href="/docs"
                 className="btn-secondary inline-flex h-[56px] w-full items-center justify-center px-10 font-display text-[14px] font-bold tracking-widest sm:w-auto md:h-[64px] md:px-12 md:text-[15px]"

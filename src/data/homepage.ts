@@ -190,9 +190,9 @@ export const faq = {
 }
 
 export const community = {
-  headline: 'Be first to try Elementa Wallet',
+  headline: 'Join the Elementa community',
   subheadline:
-    'Get launch updates, ask questions and share feedback with the Elementa team.',
+    'Ask questions, share feedback and hear about new releases from the Elementa team.',
   discord: {
     title: 'Discord',
     description: 'Chat with the team and other Elementa users.',
@@ -214,9 +214,9 @@ export const community = {
     href: 'https://t.me/Elementa',
   },
   newsletter: {
-    kicker: 'LAUNCH UPDATES',
-    title: 'Get notified when Elementa Wallet launches',
-    description: 'One email when the app is live in your country, then occasional product updates. No spam.',
+    kicker: 'IPHONE LAUNCH',
+    title: 'Get notified when Elementa Wallet comes to iPhone',
+    description: 'One email when the iPhone app is available in your country, then occasional product updates. No spam.',
     placeholder: 'you@example.com',
     cta: 'Notify me',
   },
@@ -249,6 +249,7 @@ export const footer = {
   brand: 'Elementa',
   copyrightLine: '© 2026 Stellix Soft LLC. All rights reserved.',
   links: [
+    { label: 'GET THE APP', href: '/wallet#download' },
     { label: 'TERMS & CONDITION', href: '/terms' },
     { label: 'PRIVACY POLICY', href: '/privacy' },
     { label: 'SUPPORT', href: '/contact' },

@@ -1,6 +1,7 @@
 "use client";
 
 import { X } from "lucide-react";
+import { availabilityCopy, storeLinks } from "@/data/storeLinks";
 
 type Props = {
   open: boolean;
@@ -12,8 +13,8 @@ type Props = {
 export function ComingSoonModal({
   open,
   onClose,
-  title = "Coming Soon",
-  message = "Elementa Wallet will be available on the App Store and Google Play shortly.",
+  title = availabilityCopy.iphoneDialogTitle,
+  message = availabilityCopy.iphoneDialogMessage,
 }: Props) {
   if (!open) return null;
 
@@ -51,6 +52,24 @@ export function ComingSoonModal({
         <p className="mt-4 font-body text-sm leading-relaxed text-white/75 sm:text-base">
           {message}
         </p>
+        <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <a
+            href={storeLinks.googlePlay}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary block w-full py-3 text-center text-sm font-bold"
+          >
+            Google Play
+          </a>
+          <a
+            href={storeLinks.microsoftStore}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary block w-full py-3 text-center text-sm font-bold"
+          >
+            Microsoft Store
+          </a>
+        </div>
         <a
           href="/#community-section"
           onClick={(e) => {
@@ -62,9 +81,9 @@ export function ComingSoonModal({
             }
             onClose();
           }}
-          className="btn-primary mt-8 block w-full py-3.5 text-sm font-bold uppercase tracking-widest"
+          className="btn-primary mt-3 block w-full py-3.5 text-sm font-bold uppercase tracking-widest"
         >
-          Notify me at launch
+          Notify me when it's on iPhone
         </a>
         <button
           type="button"

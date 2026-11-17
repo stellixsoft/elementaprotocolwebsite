@@ -11,13 +11,6 @@ const WalletPageSections = dynamic(
   { ssr: false, loading: () => null },
 );
 
-const WalletDownloadCtaEnhancer = dynamic(
-  () =>
-    import("@/components/sections/WalletDownloadCtaEnhancer").then((m) => ({
-      default: m.WalletDownloadCtaEnhancer,
-    })),
-  { ssr: false },
-);
 
 /** Client shell — defers below-fold hydration until idle so hero LCP can paint first. */
 export function WalletPageClient() {
@@ -35,10 +28,5 @@ export function WalletPageClient() {
 
   if (!ready) return null;
 
-  return (
-    <>
-      <WalletPageSections />
-      <WalletDownloadCtaEnhancer />
-    </>
-  );
+  return <WalletPageSections />;
 }

@@ -17,25 +17,30 @@ const fadeUp = (delay = 0) => ({
 
 export function DownloadAppSection() {
   return (
-    <section className="site-section relative w-full overflow-hidden bg-transparent">
+    <section
+      id="download"
+      aria-labelledby="download-heading"
+      className="site-section relative w-full scroll-mt-28 overflow-hidden bg-transparent"
+    >
       <div className="container-standard relative z-10">
         <div className="section-inner">
           <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
             <div className="logo-align-inset relative z-10 flex flex-1 flex-col items-start text-left">
               <motion.h2
+                id="download-heading"
                 {...fadeUp(0)}
                 className="font-display text-[clamp(2.5rem,5vw,4.25rem)] font-bold leading-[1.1] tracking-[-0.04em] text-white"
               >
-                Download our app and <br className="hidden md:block" />
-                get most out of it
+                Get Elementa Wallet <br className="hidden md:block" />
+                on your device
               </motion.h2>
 
               <motion.p
                 {...fadeUp(0.1)}
                 className="mt-6 w-full max-w-[540px] font-body text-lg leading-relaxed text-Elementa-muted md:text-xl"
               >
-                Get Elementa Wallet: Your Gateway to a Vibrant{" "}
-                <br className="hidden sm:block" /> Digital Ecosystem
+                Self-custody with Transfer Protection, live now on Android and
+                Windows. The iPhone app is on its way.
               </motion.p>
 
               <motion.div {...fadeUp(0.2)} className="relative z-20 mt-10">

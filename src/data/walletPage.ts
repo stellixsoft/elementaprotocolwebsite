@@ -9,8 +9,8 @@ export const walletHero = {
   ],
   subheadline:
     'Self-custody for Bitcoin, Solana, Ethereum, Polygon, BNB Chain and Avalanche, with Transfer Protection built in. Part of Elementa Protocol by Stellix Soft.',
-  // TODO: replace with the App Store / Google Play listing URLs once live.
-  primaryCta: { label: 'Get notified at launch', href: '#community-section' },
+  // Scrolls to the download section (Google Play, Microsoft Store, App Store coming soon).
+  primaryCta: { label: 'Download Elementa Wallet', href: '#download' },
   secondaryCta: { label: 'View Documentation', href: '/docs' },
 }
 
@@ -189,7 +189,8 @@ export const joinWalletData = {
   title: 'Decide what can leave your wallet',
   description:
     'Keys on your device, assets across Bitcoin, Solana and EVM networks in one place, and protections you control.',
-  primaryCta: 'Get notified at launch',
+  primaryCta: 'Download the app',
+  primaryCtaHref: '#download',
   secondaryCta: 'Know More',
 }
 
