@@ -29,7 +29,7 @@ const badges: StoreBadge[] = [
 ];
 
 const badgeClass =
-  "relative inline-flex h-12 w-[162px] items-center justify-center overflow-hidden rounded-lg transition duration-200 hover:-translate-y-0.5 hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#24bace]";
+  "relative inline-flex h-12 w-[162px] items-center justify-center rounded-lg transition duration-200 hover:-translate-y-0.5 hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#24bace]";
 
 function BadgeImage({ image }: { image: StaticImageData }) {
   return (
@@ -70,7 +70,7 @@ export function AppStoreButtons({
               className={cn(badgeClass, "opacity-80", buttonClassName)}
             >
               <BadgeImage image={image} />
-              <span className="pointer-events-none absolute -right-1 -top-1 rounded-full bg-[#24bace] px-2 py-[1px] font-body text-[10px] font-bold uppercase tracking-wider text-[#0a0f1d]">
+              <span className="pointer-events-none absolute -right-2 -top-2.5 rounded-full bg-[#24bace] px-2 py-[2px] font-body text-[9px] font-bold uppercase leading-none tracking-wider text-[#0a0f1d] shadow-[0_0_0_2px_#15202F]">
                 Soon
               </span>
             </DownloadAppButton>
