@@ -211,7 +211,7 @@ export const community = {
     title: 'Telegram',
     description: 'Community discussions and regional channels.',
     cta: 'Join Channel',
-    href: 'https://t.me/Elementa',
+    href: 'https://t.me/+kwgycajyxqI5NzRk',
   },
   newsletter: {
     kicker: 'IPHONE LAUNCH',
@@ -257,7 +257,7 @@ export const footer = {
   social: [
     { id: 'twitter', label: 'Twitter', href: 'https://x.com/ElementaPro', asset: 'twitter' },
     { id: 'discord', label: 'Discord', href: 'https://discord.gg/Elementa', asset: 'discord' },
-    { id: 'telegram', label: 'Telegram', href: 'https://t.me/Elementa', asset: 'telegram' },
+    { id: 'telegram', label: 'Telegram', href: 'https://t.me/+kwgycajyxqI5NzRk', asset: 'telegram' },
   ],
   cta: { label: 'Get in touch', href: '/contact' },
 }
