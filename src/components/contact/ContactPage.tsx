@@ -23,6 +23,9 @@ export function ContactPage() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [submitting, setSubmitting] = useState(false);
+  // Spam protection: when the form was shown, and a hidden field only bots fill in.
+  const [formStartedAt] = useState(() => Date.now());
+  const [companyWebsite, setCompanyWebsite] = useState("");
   const [toast, setToast] = useState<Toast>(null);
   const [fieldErrors, setFieldErrors] = useState<Partial<Record<FieldKey, string>>>(
     {},
@@ -87,10 +90,14 @@ export function ContactPage() {
         email: string;
         message: string;
         subject?: string;
+        company_website: string;
+        form_started_at: number;
       } = {
         name: name.trim(),
         email: email.trim(),
         message: message.trim(),
+        company_website: companyWebsite,
+        form_started_at: formStartedAt,
       };
       const sub = subject.trim();
       if (sub.length >= 2) payload.subject = sub;
@@ -177,6 +184,19 @@ export function ContactPage() {
                   </motion.div>
 
                   <form className="space-y-5 sm:space-y-6" onSubmit={handleSubmit} noValidate>
+                    {/* Honeypot: hidden from people and screen readers; bots that fill it are ignored. */}
+                    <div aria-hidden="true" className="absolute -left-[10000px] top-auto h-px w-px overflow-hidden">
+                      <label htmlFor="contact-company-website">Company website</label>
+                      <input
+                        id="contact-company-website"
+                        type="text"
+                        name="company_website"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        value={companyWebsite}
+                        onChange={(e) => setCompanyWebsite(e.target.value)}
+                      />
+                    </div>
                     <div className="grid grid-cols-1 gap-4 sm:gap-5 md:grid-cols-2">
                       <div className="space-y-2">
                         <label
@@ -193,6 +213,7 @@ export function ContactPage() {
                             placeholder="Your name"
                             type="text"
                             name="name"
+                            maxLength={100}
                             autoComplete="name"
                             value={name}
                             onChange={(e) => {
@@ -225,6 +246,7 @@ export function ContactPage() {
                             placeholder="you@example.com"
                             type="email"
                             name="email"
+                            maxLength={254}
                             autoComplete="email"
                             value={email}
                             onChange={(e) => {
@@ -258,6 +280,7 @@ export function ContactPage() {
                           placeholder="e.g. Partnership, support, press…"
                           type="text"
                           name="subject"
+                          maxLength={150}
                           value={subject}
                           onChange={(e) => {
                             setSubject(e.target.value);
@@ -289,6 +312,7 @@ export function ContactPage() {
                           placeholder="Your message"
                           rows={5}
                           name="message"  
+                          maxLength={5000}
                           value={message}
                           onChange={(e) => {
                             setMessage(e.target.value);

@@ -12,17 +12,26 @@ import {
   DISALLOWED_EMAIL_MESSAGE,
   INVALID_EMAIL_MESSAGE,
 } from "@/lib/emailValidation";
+import { checkBodySize, checkBotSignals, checkOrigin, checkRateLimits, clientIp } from "@/lib/spamGuard";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
 export async function POST(request: Request) {
   try {
+    const early = checkOrigin(request) ?? checkBodySize(request);
+    if (early) return NextResponse.json({ error: early.error }, { status: early.status });
+
     const body = (await request.json().catch(() => ({}))) as {
       email?: string;
-    };
+    } & Record<string, unknown>;
 
-    const email = body.email?.trim() ?? "";
+    if (checkBotSignals(body)) {
+      // Automated sign-up: pretend it worked, send nothing.
+      return NextResponse.json({ success: true }, { status: 200 });
+    }
+
+    const email = typeof body.email === "string" ? body.email.trim() : "";
     if (!email) {
       return NextResponse.json({ error: "Email is required" }, { status: 400 });
     }
@@ -34,6 +43,17 @@ export async function POST(request: Request) {
             : INVALID_EMAIL_MESSAGE,
         },
         { status: 400 },
+      );
+    }
+
+    const limited = await checkRateLimits([
+      { key: `subscribe:ip:${clientIp(request)}`, limit: 5, windowSec: 60 * 60 },
+      { key: `subscribe:email:${email.toLowerCase()}`, limit: 2, windowSec: 24 * 60 * 60 },
+    ]);
+    if (limited) {
+      return NextResponse.json(
+        { error: limited.error },
+        { status: 429, headers: { "Retry-After": String(limited.retryAfter ?? 60) } },
       );
     }
 

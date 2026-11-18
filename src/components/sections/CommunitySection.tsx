@@ -50,6 +50,8 @@ function CardIconTitle({
 
 export function CommunitySection({ community }) {
   const [newsletterEmail, setNewsletterEmail] = useState("");
+  // Spam protection: a hidden field only bots fill in.
+  const [newsletterHoneypot, setNewsletterHoneypot] = useState("");
   const [newsletterError, setNewsletterError] = useState<string | null>(null);
   const [newsletterSuccess, setNewsletterSuccess] = useState<string | null>(
     null,
@@ -82,7 +84,7 @@ export function CommunitySection({ community }) {
         const res = await fetch("/api/community-subscribe", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ email: v }),
+          body: JSON.stringify({ email: v, company_website: newsletterHoneypot }),
         });
         const data = (await res.json().catch(() => ({}))) as {
           error?: string;
@@ -103,7 +105,7 @@ export function CommunitySection({ community }) {
         setNewsletterSubmitting(false);
       }
     },
-    [newsletterEmail, newsletterSubmitting],
+    [newsletterEmail, newsletterSubmitting, newsletterHoneypot],
   );
 
   const discordHref = community.discord.href;
@@ -299,6 +301,19 @@ export function CommunitySection({ community }) {
                 onSubmit={handleNewsletterSubmit}
                 noValidate
               >
+                {/* Honeypot: hidden from people and screen readers; bots that fill it are ignored. */}
+                <div aria-hidden="true" className="absolute -left-[10000px] top-auto h-px w-px overflow-hidden">
+                  <label htmlFor="newsletter-company-website">Company website</label>
+                  <input
+                    id="newsletter-company-website"
+                    type="text"
+                    name="company_website"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={newsletterHoneypot}
+                    onChange={(e) => setNewsletterHoneypot(e.target.value)}
+                  />
+                </div>
                 <div className="flex w-full flex-col items-stretch gap-3 sm:flex-row sm:items-stretch sm:gap-2">
                   <input
                     type="email"
