@@ -12,7 +12,8 @@
  *     and a cap on links in the message.
  *  6. Rate limits per IP address and per email address.
  *
- * Rate limits use Upstash Redis when UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN are set
+ * Rate limits use Upstash Redis when UPSTASH_REDIS_REST_URL / UPSTASH_REDIS_REST_TOKEN (or the Vercel
+ * Marketplace names KV_REST_API_URL / KV_REST_API_TOKEN) are set
  * (shared across all Vercel instances). Without them they fall back to memory, which still stops
  * bursts against a single instance but is not shared between instances.
  */
@@ -131,8 +132,9 @@ function memoryHit(key: string, windowSec: number, now: number): Bucket {
 }
 
 async function upstashHit(key: string, windowSec: number, now: number): Promise<Bucket | null> {
-  const url = process.env.UPSTASH_REDIS_REST_URL;
-  const token = process.env.UPSTASH_REDIS_REST_TOKEN;
+  // Upstash's own names, or the KV_* names the Vercel Marketplace integration injects.
+  const url = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL;
+  const token = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN;
   if (!url || !token) return null;
   try {
     const res = await fetch(`${url.replace(/\/$/, "")}/pipeline`, {
