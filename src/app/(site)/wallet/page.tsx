@@ -6,7 +6,7 @@ import { walletHero } from "@/data/walletPage";
 export const metadata: Metadata = {
   title: "Elementa Wallet",
   description:
-    "Elementa Wallet: self-custody for Bitcoin, Solana and EVM networks with Transfer Protection. Freeze sending with a time lock, set a daily limit and use a whitelist.",
+    "Elementa Wallet self-custody for Bitcoin, Solana and EVM networks with Transfer Protection. Freeze sending with a time lock, set a daily limit and use a whitelist.",
   openGraph: {
     title: "Elementa Wallet",
     description: "Self-custody with transfer protection built in.",

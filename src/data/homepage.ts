@@ -159,7 +159,7 @@ export const faq = {
       id: 'faq0',
       question: 'What is Transfer Protection?',
       answer:
-        'Controls over what can leave your wallet: Freeze Sending (optionally locked for 24 hours, 72 hours or 7 days), a daily USD limit on sends and swaps, a whitelist of allowed addresses and contracts, and a warning when a recipient looks like an address from your history. They run on your device, so anyone who has your recovery phrase could still restore it in another app. Keep the phrase offline.',
+        'Controls over what can leave your wallet Freeze Sending (optionally locked for 24 hours, 72 hours or 7 days), a daily USD limit on sends and swaps, a whitelist of allowed addresses and contracts, and a warning when a recipient looks like an address from your history. They run on your device, so anyone who has your recovery phrase could still restore it in another app. Keep the phrase offline.',
       defaultOpen: true,
     },
     {
